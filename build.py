@@ -7,64 +7,69 @@ E = html.escape
 
 # id, label, icon, x%, y%, title, subtitle, paragraphs, meta rows, previews, link
 PROJECTS = [
-  dict(id="tiketvisa", label="TiketVisa", icon="img/p/tiketvisa-icon.webp", x=31, y=15,
+  dict(id="tiketvisa", label="TiketVisa", x=30, y=12,
        sub="Startup · Founder",
        text=["Onward flight reservations and hotel bookings with a real PNR, for travellers who have to show a ticket out at the embassy or the airport.",
              "I moved the site off WordPress to a static Next.js build in 18 languages, with Cloudflare Workers routing between the new pages and the blog, handling forms and serving images."],
        meta=[("Role", "Founder, product and engineering"), ("Built with", "Next.js, Cloudflare Workers, WordPress"), ("Languages", "18")],
-       previews=["img/p/tiketvisa.webp"], link="https://tiketvisa.com"),
-  dict(id="unlisim", label="UnliSIM", icon="img/p/unlisim-icon.webp", x=46, y=9,
+       previews=["img/m/tiketvisa.webp"], link="https://tiketvisa.com"),
+  dict(id="unlisim", label="UnliSIM", x=44, y=7,
        sub="Startup · Founder",
        text=["Travel eSIMs for 200+ destinations. Pick a country and the number of days, pay with Apple Pay, Google Pay or card, and the phone is online in about two minutes. No roaming bill, no SIM swap."],
        meta=[("Role", "Founder and engineering"), ("Built with", "Next.js on Cloudflare (OpenNext)"), ("Coverage", "200+ destinations")],
-       previews=["img/p/unlisim.webp"], link="https://unlisim.com"),
-  dict(id="valuto", label="Valuto", icon="img/p/valuto-icon.webp", x=61, y=14,
+       previews=["img/m/unlisim.webp"], link="https://unlisim.com"),
+  dict(id="valuto", label="Valuto", x=58, y=10,
        sub="Startup · Founder",
        text=["A travel wallet that pays merchants abroad by scanning their own local QR codes. One balance in dollars, and the exchange rate is on the screen before you tap.",
              "A React web app, native iOS and Android apps from one Expo codebase, and a small Hono worker that sends every download link to the right store."],
        meta=[("Role", "Founder, web and mobile"), ("Built with", "React, Expo, Supabase, Solana, Cloudflare"), ("Platforms", "Web, iOS, Android")],
-       previews=["img/p/valuto.webp", "img/p/valuto-app-mainpage.webp", "img/p/valuto-app-paymentpage.webp", "img/p/valuto-app-transferspage.webp"], link="https://getvaluto.com"),
-  dict(id="anonympass", label="AnonymPass", icon="img/p/anonympass-icon.webp", x=73, y=27,
+       previews=["img/m/valuto.webp", "img/p/valuto-app-mainpage.webp", "img/p/valuto-app-paymentpage.webp"], link="https://getvaluto.com"),
+  dict(id="anonympass", label="AnonymPass", x=71, y=20,
        sub="Startup · Founder",
        text=["A crypto payment gateway for merchants that card processors turn away. Funds land straight in the merchant's wallet on Tron or Solana and settle in under 30 seconds, for a flat 0.25% fee."],
        meta=[("Role", "Founder and engineering"), ("Chains", "Tron, Solana"), ("Fee", "0.25% flat")],
-       previews=["img/p/anonympass.webp"], link="https://anonympass.com"),
-  dict(id="digitalrocket", label="Digital Rocket", icon="img/p/digitalrocket-icon.webp", x=19, y=31,
+       previews=["img/m/anonympass.webp"], link="https://anonympass.com"),
+  dict(id="digitalrocket", label="Digital Rocket", x=20, y=30,
        sub="Client · Website",
        text=["Website for an AI-native growth marketing agency in Dubai, blending SEO, AI search and performance media."],
        meta=[("Client", "Digital Rocket, Dubai"), ("Work", "Website design and build")],
-       previews=["img/p/digitalrocket.webp"], link="https://digital-rocket.io"),
-  dict(id="undrgoods", label="Undrgoods", icon="img/p/undrgoods-icon.webp", x=78, y=47,
+       previews=["img/m/digitalrocket.webp"], link="https://digital-rocket.io"),
+  dict(id="undrgoods", label="Undrgoods", x=78, y=44,
        sub="Client · Online store",
        text=["Online store for an underwear and loungewear brand."],
        meta=[("Client", "Undrgoods"), ("Work", "E-commerce store")],
-       previews=["img/p/undrgoods.webp"], link="https://undrgoods.com"),
-  dict(id="missingstone", label="The Missing Stone", icon="img/p/missingstone-icon.webp", x=23, y=53,
+       previews=["img/m/undrgoods.webp"], link="https://undrgoods.com"),
+  dict(id="missingstone", label="The Missing Stone", x=22, y=52,
        sub="Client · Online store",
        text=["Online store for a jewellery brand: collections, bangles, bracelets, earrings, necklaces and custom-made pieces."],
        meta=[("Client", "The Missing Stone"), ("Work", "E-commerce store")],
-       previews=["img/p/missingstone.webp"], link="https://themissingstone.com"),
-  dict(id="asiainsight", label="Asia Insight", icon="img/p/asiainsight-icon.webp", x=71, y=66,
+       previews=["img/m/missingstone.webp"], link="https://themissingstone.com"),
+  dict(id="asiainsight", label="Asia Insight", x=72, y=64,
        sub="Client · Website",
        text=["Website for a destination management company running tours to South-East Asia, in Azerbaijani."],
        meta=[("Client", "Asia Insight, Baku"), ("Work", "Website design and build")],
-       previews=["img/p/asiainsight.webp"], link="https://asiainsight.az"),
-  dict(id="harborfalcon", label="Harbor Falcon", icon="img/p/harborfalcon-icon.webp", x=33, y=71,
+       previews=["img/m/asiainsight.webp"], link="https://asiainsight.az"),
+  dict(id="harborfalcon", label="Harbor Falcon", x=33, y=70,
        sub="Client · Website",
        text=["Website for a US home-buying company: get a competitive cash offer for your house, with no agents and no open houses."],
        meta=[("Client", "Harbor Falcon, United States"), ("Work", "Website design and build")],
-       previews=["img/p/harborfalcon.webp"], link="https://harborfalcon.com"),
-  dict(id="course", label="Elementor course", icon=None, glyph="course", x=54, y=75,
+       previews=["img/m/harborfalcon.webp"], link="https://harborfalcon.com"),
+  dict(id="travelsolotiket", label="TravelSoloTiket", x=86, y=30,
+       sub="Client · Website",
+       text=["Verified flight and hotel reservations in under 60 seconds: onward or return flight reservations and hotel bookings for visa applications, airline check-in and border control."],
+       meta=[("Client", "TravelSoloTiket"), ("Work", "Website design and build")],
+       previews=["img/m/travelsolotiket.webp"], link="https://travelsolotiket.com"),
+  dict(id="course", label="Elementor course", glyph="course", x=55, y=74,
        sub="Teaching · Udemy",
        text=["Elementor A'dan Z'ye: a web design course on Udemy, taught in Turkish. More than 2,600 students have taken it, and it is rated 4.5 out of 5."],
        meta=[("Students", "2,600+"), ("Rating", "4.5 / 5"), ("Language", "Turkish")],
        previews=[], link="https://www.udemy.com/course/elementor-a-dan-z-ye-ogren-elementorla-web-sitesi-tasarla/", linklabel="Open on Udemy"),
-  dict(id="gevelopers", label="Gevelopers LLC", icon=None, glyph="folder", x=10, y=72,
+  dict(id="gevelopers", label="Gevelopers LLC", x=10, y=72,
        sub="Company · Since 2022",
        text=["My company. A remote team spread across the globe, building custom web and mobile apps and games for clients: from a startup MVP from scratch to scaling a product that already exists.",
              "Before Gevelopers I designed and built 200+ WordPress sites at ValisoyMedia, worked on the Kontakt Home WooCommerce store, and started out doing SEO at ELSEO in Baku."],
        meta=[("Registered", "Sheridan, Wyoming"), ("Team", "Remote, worldwide"), ("Builds", "Web, mobile, games")],
-       previews=[], link="https://gevelopers.com"),
+       previews=["img/m/gevelopers.webp"], link="https://gevelopers.com"),
 ]
 
 INSTAGRAM = [
@@ -99,12 +104,26 @@ APPS = {
   "trash": ('Trash', '<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 18h36l-3 40a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4z" fill="#e9e9ec" stroke="#bdbdc2" stroke-width="2"/><rect x="11" y="12" width="42" height="7" rx="3.5" fill="#d4d4d8"/><g stroke="#bdbdc2" stroke-width="2"><path d="M24 24l1 32M32 24v32M40 24l-1 32"/></g></svg>'),
 }
 
-def icon_html(p, cls="icon"):
-    if p.get("icon"):
-        img = f'<img src="{p["icon"]}" width="320" height="320" alt="" draggable="false">'
-    else:
-        img = GLYPHS[p["glyph"]]
-    return img
+# favicon file, tile colour, inner padding (as a share of the tile)
+FAV = {
+  "tiketvisa": ("img/fav/tiketvisa.svg", "#ffffff", 0.16),
+  "unlisim": ("img/fav/unlisim.svg", "#ffffff", 0.16),
+  "valuto": ("img/fav/valuto.webp", "#f15a29", 0),
+  "anonympass": ("img/fav/anonympass.svg", "#ffffff", 0.2),
+  "digitalrocket": ("img/fav/digitalrocket.webp", "#000000", 0),
+  "undrgoods": ("img/fav/undrgoods.webp", "#1b2a4e", 0),
+  "missingstone": ("img/fav/missingstone.svg", "#f6efe6", 0.24),
+  "asiainsight": ("img/fav/asiainsight.svg", "#ffffff", 0.14),
+  "harborfalcon": ("img/fav/harborfalcon.svg", "#ffffff", 0.16),
+  "travelsolotiket": ("img/fav/travelsolotiket.svg", "#ffffff", 0.16),
+  "gevelopers": ("img/fav/gevelopers.svg", "#ffffff", 0.2),
+}
+
+def icon_html(p):
+    if p["id"] in FAV:
+        src, bg, pad = FAV[p["id"]]
+        return f'<span class="tile" style="--tile:{bg};--pad:{pad * 100:.0f}%"><img src="{src}" width="128" height="128" alt="" draggable="false"></span>'
+    return f'<span class="tile tile--glyph">{GLYPHS[p["glyph"]]}</span>' 
 
 def project_window(p):
     paras = "".join(f"<p>{E(t)}</p>" for t in p["text"])
@@ -113,10 +132,10 @@ def project_window(p):
     if p["previews"]:
         imgs = []
         for i, src in enumerate(p["previews"]):
-            phone = "app-" in src
-            w, h = (540, 1200) if phone else (1200, 750)
-            alt = f'{p["label"]} app screen' if phone else f'Homepage of {p["label"]}'
-            imgs.append(f'<img class="{"shot shot--phone" if phone else "shot"}" src="{src}" width="{w}" height="{h}" alt="{E(alt)}" loading="lazy">')
+            app = "app-" in src
+            w, h = (540, 1200) if app else (540, 1169)
+            alt = f'{p["label"]} app screen' if app else f'{p["label"]} on a phone'
+            imgs.append(f'<img class="shot" src="{src}" width="{w}" height="{h}" alt="{E(alt)}" loading="lazy">')
         prev = f'<details class="preview" open><summary>Preview:</summary><div class="preview__body">{"".join(imgs)}</div></details>'
     head_icon = icon_html(p)
     return f'''
@@ -166,12 +185,20 @@ page = f'''<!doctype html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');if(navigator.userAgentData&&navigator.userAgentData.brands.some(function(b){{return /Chromium/.test(b.brand)}}))document.documentElement.classList.add('refract')</script>
 <script type="application/ld+json">
 {{"@context":"https://schema.org","@type":"Person","name":"Vali Valiyev","alternateName":"vvalisoy","url":"https://vvalisoy.github.io/","jobTitle":"Software engineer","worksFor":{{"@type":"Organization","name":"Gevelopers LLC","url":"https://gevelopers.com"}},"sameAs":["https://github.com/vvalisoy","https://substack.com/@vvalisoy","https://instagram.com/vvalisoy","https://t.me/vvalisoy","https://www.facebook.com/vvalisoy","https://linktr.ee/vvalisoy"]}}
 </script>
 </head>
 <body>
+
+<svg class="sr" width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="lg-refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.011 0.011" numOctaves="1" seed="7" result="noise"/>
+    <feGaussianBlur in="noise" stdDeviation="2.5" result="map"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
 
 <div class="wallpaper" aria-hidden="true"><img src="img/vali.webp" width="1000" height="1000" alt=""></div>
 
@@ -182,6 +209,7 @@ page = f'''<!doctype html>
     <a href="#w-terminal" data-open="w-terminal">Terminal</a>
     <a href="#w-photos" data-open="w-photos">Gallery</a>
     <a href="#w-mail" data-open="w-mail">Contact</a>
+    <a href="#desktop" class="menubar__cleanup" data-cleanup>Clean Up</a>
   </div>
   <div class="menubar__right">
     <span class="status-icons" aria-hidden="true">
@@ -206,7 +234,6 @@ page = f'''<!doctype html>
   </div>
   <div class="phone-apps">
     {app_icon("terminal", "w-terminal")}
-    {app_icon("code", "w-code")}
     {app_icon("warning", "w-error")}
     {app_icon("github", None, "https://github.com/vvalisoy")}
     {app_icon("telegram", None, "https://t.me/vvalisoy")}
@@ -218,7 +245,6 @@ page = f'''<!doctype html>
 <nav class="dock" aria-label="Dock">
   <div class="dock__group dock__group--mac">
     {app_icon("terminal", "w-terminal")}
-    {app_icon("code", "w-code")}
     {app_icon("warning", "w-error")}
   </div>
   <span class="dock__sep dock__sep--mac" aria-hidden="true"></span>
@@ -315,47 +341,24 @@ page = f'''<!doctype html>
 <section class="win win--terminal" id="w-terminal" role="dialog" aria-labelledby="w-terminal-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-terminal-t">vali — zsh — 80×24</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body term" data-term>
-    <pre class="term__out" aria-live="polite">Last login: <span data-login></span> on ttys001
-Type <b>help</b> to see what this terminal can do.
-</pre>
+    <pre class="term__out" aria-live="polite"></pre>
     <form class="term__line"><label for="term-in"><span class="term__ps">vali@macbook ~ %</span></label><input id="term-in" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send"></form>
   </div>
 </section>
 
-<section class="win win--code" id="w-code" role="dialog" aria-labelledby="w-code-t">
-  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-code-t">vali.ts — vvalisoy</h2><a class="win__done" href="#">Done</a></header>
-  <div class="win__body code"><pre><code><span class="c">// Hi. This is me, typed.</span>
-<span class="k">export const</span> <span class="v">vali</span> = {{
-  name: <span class="s">"Vali Valiyev"</span>,
-  handle: <span class="s">"@vvalisoy"</span>,
-  from: <span class="s">"Sumgait, Azerbaijan"</span>,
-  basedIn: <span class="s">"Baku, mostly"</span>,
-  role: <span class="s">"Software engineer"</span>,
-  company: <span class="s">"Gevelopers LLC"</span>,
-  shipping: [<span class="s">"TiketVisa"</span>, <span class="s">"UnliSIM"</span>, <span class="s">"Valuto"</span>, <span class="s">"AnonymPass"</span>],
-  stack: [<span class="s">"TypeScript"</span>, <span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Expo"</span>,
-          <span class="s">"Cloudflare Workers"</span>, <span class="s">"Supabase"</span>, <span class="s">"PHP"</span>, <span class="s">"WordPress"</span>],
-  wordpressSitesBuilt: <span class="n">200</span>,
-  udemyStudents: <span class="n">2600</span>,
-  speaks: [<span class="s">"az"</span>, <span class="s">"tr"</span>, <span class="s">"en"</span>],
-  availableForWork: <span class="k">true</span>,
-}};
-
-<span class="k">export function</span> <span class="f">hire</span>(project: <span class="t">string</span>) {{
-  <span class="k">return</span> <span class="f">fetch</span>(<span class="s">"mailto:vali@gevelopers.com"</span>, {{ body: project }});
-}}</code></pre></div>
-</section>
 
 <section class="win win--mail" id="w-mail" role="dialog" aria-labelledby="w-mail-t">
-  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><a class="win__done" href="#">Done</a></header>
-  <form class="win__body mail" data-mail action="mailto:vali@gevelopers.com" method="get" enctype="text/plain">
-    <div class="mail__row"><span>To:</span><span class="mail__to">Vali Valiyev &lt;vali@gevelopers.com&gt;</span></div>
-    <label class="mail__row"><span>Subject:</span><input name="subject" value="Hello Vali" autocomplete="off"></label>
-    <textarea name="body" rows="8" aria-label="Message" placeholder="What are we building?"></textarea>
-    <div class="mail__foot">
-      <span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span>
-      <button class="mac-button mac-button--blue" type="submit">Send</button>
-    </div>
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><button class="mail__send" type="submit" form="mail-form" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6l.1 6.5L15 12 3.5 13.9z" fill="currentColor"/></svg></button><a class="win__done" href="#">Cancel</a></header>
+  <form class="win__body mail" id="mail-form" data-mail action="https://formsubmit.co/vali@gevelopers.com" method="post">
+    <div class="mail__row"><span class="mail__label">To:</span><span class="mail__to" title="Fixed recipient">Vali Valiyev</span><span class="mail__addr">vali@gevelopers.com</span></div>
+    <label class="mail__row"><span class="mail__label">From:</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
+    <label class="mail__row"><span class="mail__label">Subject:</span><input name="_subject" value="Hello Vali" autocomplete="off" required></label>
+    <input type="text" name="_honey" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <textarea name="message" rows="9" aria-label="Message" placeholder="Write your message…" required></textarea>
+    <p class="mail__status" role="status" aria-live="polite"></p>
+    <div class="mail__foot"><span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span><button class="mac-button mac-button--blue" type="submit">Send</button></div>
   </form>
 </section>
 

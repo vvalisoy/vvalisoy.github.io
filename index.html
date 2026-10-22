@@ -18,12 +18,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');if(navigator.userAgentData&&navigator.userAgentData.brands.some(function(b){return /Chromium/.test(b.brand)}))document.documentElement.classList.add('refract')</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Vali Valiyev","alternateName":"vvalisoy","url":"https://vvalisoy.github.io/","jobTitle":"Software engineer","worksFor":{"@type":"Organization","name":"Gevelopers LLC","url":"https://gevelopers.com"},"sameAs":["https://github.com/vvalisoy","https://substack.com/@vvalisoy","https://instagram.com/vvalisoy","https://t.me/vvalisoy","https://www.facebook.com/vvalisoy","https://linktr.ee/vvalisoy"]}
 </script>
 </head>
 <body>
+
+<svg class="sr" width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="lg-refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.011 0.011" numOctaves="1" seed="7" result="noise"/>
+    <feGaussianBlur in="noise" stdDeviation="2.5" result="map"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
 
 <div class="wallpaper" aria-hidden="true"><img src="img/vali.webp" width="1000" height="1000" alt=""></div>
 
@@ -34,6 +42,7 @@
     <a href="#w-terminal" data-open="w-terminal">Terminal</a>
     <a href="#w-photos" data-open="w-photos">Gallery</a>
     <a href="#w-mail" data-open="w-mail">Contact</a>
+    <a href="#desktop" class="menubar__cleanup" data-cleanup>Clean Up</a>
   </div>
   <div class="menubar__right">
     <span class="status-icons" aria-hidden="true">
@@ -53,12 +62,11 @@
     <p class="widget__time"><span data-clock-big>--:--</span> in Baku</p>
   </section>
   <div class="icons">
-    <a class="icon" href="#w-tiketvisa" data-open="w-tiketvisa" style="--x:31%;--y:15%"><span class="icon__img"><img src="img/p/tiketvisa-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">TiketVisa</span></a><a class="icon" href="#w-unlisim" data-open="w-unlisim" style="--x:46%;--y:9%"><span class="icon__img"><img src="img/p/unlisim-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">UnliSIM</span></a><a class="icon" href="#w-valuto" data-open="w-valuto" style="--x:61%;--y:14%"><span class="icon__img"><img src="img/p/valuto-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Valuto</span></a><a class="icon" href="#w-anonympass" data-open="w-anonympass" style="--x:73%;--y:27%"><span class="icon__img"><img src="img/p/anonympass-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">AnonymPass</span></a><a class="icon" href="#w-digitalrocket" data-open="w-digitalrocket" style="--x:19%;--y:31%"><span class="icon__img"><img src="img/p/digitalrocket-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Digital Rocket</span></a><a class="icon" href="#w-undrgoods" data-open="w-undrgoods" style="--x:78%;--y:47%"><span class="icon__img"><img src="img/p/undrgoods-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Undrgoods</span></a><a class="icon" href="#w-missingstone" data-open="w-missingstone" style="--x:23%;--y:53%"><span class="icon__img"><img src="img/p/missingstone-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">The Missing Stone</span></a><a class="icon" href="#w-asiainsight" data-open="w-asiainsight" style="--x:71%;--y:66%"><span class="icon__img"><img src="img/p/asiainsight-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Asia Insight</span></a><a class="icon" href="#w-harborfalcon" data-open="w-harborfalcon" style="--x:33%;--y:71%"><span class="icon__img"><img src="img/p/harborfalcon-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Harbor Falcon</span></a><a class="icon" href="#w-course" data-open="w-course" style="--x:54%;--y:75%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span><span class="icon__label">Elementor course</span></a><a class="icon" href="#w-gevelopers" data-open="w-gevelopers" style="--x:10%;--y:72%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M4 14a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#5ac8fa"/><path d="M4 22h56v30a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#7ad7ff"/><text x="32" y="46" text-anchor="middle" font-size="16" font-weight="800" fill="#0a6aa1" font-family="system-ui">G</text></svg></span><span class="icon__label">Gevelopers LLC</span></a>
-    <a class="icon" href="#w-about" data-open="w-about" style="--x:84%;--y:12%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 4h26l12 12v44H14z" fill="#fff"/><path d="M40 4v12h12" fill="#e5e5e5"/><g fill="#9a9a9a"><rect x="20" y="24" width="24" height="3"/><rect x="20" y="31" width="20" height="3"/><rect x="20" y="38" width="24" height="3"/><rect x="20" y="45" width="14" height="3"/></g><text x="32" y="17" text-anchor="middle" font-size="8" font-weight="800" fill="#111" font-family="system-ui">MD</text></svg></span><span class="icon__label">README.md</span></a>
+    <a class="icon" href="#w-tiketvisa" data-open="w-tiketvisa" style="--x:30%;--y:12%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/tiketvisa.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">TiketVisa</span></a><a class="icon" href="#w-unlisim" data-open="w-unlisim" style="--x:44%;--y:7%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/unlisim.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">UnliSIM</span></a><a class="icon" href="#w-valuto" data-open="w-valuto" style="--x:58%;--y:10%"><span class="icon__img"><span class="tile" style="--tile:#f15a29;--pad:0%"><img src="img/fav/valuto.webp" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Valuto</span></a><a class="icon" href="#w-anonympass" data-open="w-anonympass" style="--x:71%;--y:20%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:20%"><img src="img/fav/anonympass.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">AnonymPass</span></a><a class="icon" href="#w-digitalrocket" data-open="w-digitalrocket" style="--x:20%;--y:30%"><span class="icon__img"><span class="tile" style="--tile:#000000;--pad:0%"><img src="img/fav/digitalrocket.webp" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Digital Rocket</span></a><a class="icon" href="#w-undrgoods" data-open="w-undrgoods" style="--x:78%;--y:44%"><span class="icon__img"><span class="tile" style="--tile:#1b2a4e;--pad:0%"><img src="img/fav/undrgoods.webp" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Undrgoods</span></a><a class="icon" href="#w-missingstone" data-open="w-missingstone" style="--x:22%;--y:52%"><span class="icon__img"><span class="tile" style="--tile:#f6efe6;--pad:24%"><img src="img/fav/missingstone.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">The Missing Stone</span></a><a class="icon" href="#w-asiainsight" data-open="w-asiainsight" style="--x:72%;--y:64%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:14%"><img src="img/fav/asiainsight.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Asia Insight</span></a><a class="icon" href="#w-harborfalcon" data-open="w-harborfalcon" style="--x:33%;--y:70%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/harborfalcon.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Harbor Falcon</span></a><a class="icon" href="#w-travelsolotiket" data-open="w-travelsolotiket" style="--x:86%;--y:30%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/travelsolotiket.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">TravelSoloTiket</span></a><a class="icon" href="#w-course" data-open="w-course" style="--x:55%;--y:74%"><span class="icon__img"><span class="tile tile--glyph"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span></span><span class="icon__label">Elementor course</span></a><a class="icon" href="#w-gevelopers" data-open="w-gevelopers" style="--x:10%;--y:72%"><span class="icon__img"><span class="tile" style="--tile:#ffffff;--pad:20%"><img src="img/fav/gevelopers.svg" width="128" height="128" alt="" draggable="false"></span></span><span class="icon__label">Gevelopers LLC</span></a>
+    <a class="icon" href="#w-about" data-open="w-about" style="--x:84%;--y:12%"><span class="icon__img"><span class="tile tile--glyph"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 4h26l12 12v44H14z" fill="#fff"/><path d="M40 4v12h12" fill="#e5e5e5"/><g fill="#9a9a9a"><rect x="20" y="24" width="24" height="3"/><rect x="20" y="31" width="20" height="3"/><rect x="20" y="38" width="24" height="3"/><rect x="20" y="45" width="14" height="3"/></g><text x="32" y="17" text-anchor="middle" font-size="8" font-weight="800" fill="#111" font-family="system-ui">MD</text></svg></span></span><span class="icon__label">README.md</span></a>
   </div>
   <div class="phone-apps">
     <a class="app" href="#w-terminal" data-open="w-terminal" aria-label="Terminal"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d1d1f"/><rect x="2" y="2" width="60" height="60" rx="12" fill="#2b2b2d"/><path d="M15 22l11 9-11 9" fill="none" stroke="#e6e6e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="30" y="38" width="17" height="4.5" rx="2" fill="#e6e6e6"/></svg></span><span class="app__label">Terminal</span></a>
-    <a class="app" href="#w-code" data-open="w-code" aria-label="Code"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f6fc6"/><path d="M24 20 12 32l12 12M40 20l12 12-12 12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 16 29 48" stroke="#9fd0ff" stroke-width="4" stroke-linecap="round"/></svg></span><span class="app__label">Code</span></a>
     <a class="app" href="#w-error" data-open="w-error" aria-label="Problems"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 61 56H3z" fill="#ffcc00" stroke="#e0a800" stroke-width="2" stroke-linejoin="round"/><rect x="29" y="22" width="6" height="20" rx="3" fill="#1d1d1f"/><circle cx="32" cy="48" r="3.6" fill="#1d1d1f"/></svg></span><span class="app__label">Problems</span></a>
     <a class="app" href="https://github.com/vvalisoy" target="_blank" rel="noopener" aria-label="GitHub"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><path transform="translate(12 12) scale(1.667)" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3" fill="#111"/></svg></span><span class="app__label">GitHub</span></a>
     <a class="app" href="https://t.me/vvalisoy" target="_blank" rel="noopener" aria-label="Telegram"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2aabee"/><path d="M13 31.5 47 18.4c1.6-.6 3 .4 2.5 2.8l-5.8 27.3c-.4 1.9-1.6 2.4-3.2 1.5l-8.8-6.5-4.2 4.1c-.5.5-.9.9-1.8.9l.6-9 16.4-14.8c.7-.6-.2-1-1.1-.4L22 37.1l-8.7-2.7c-1.9-.6-1.9-1.9.4-2.9z" fill="#fff"/></svg></span><span class="app__label">Telegram</span></a>
@@ -70,7 +78,6 @@
 <nav class="dock" aria-label="Dock">
   <div class="dock__group dock__group--mac">
     <a class="app" href="#w-terminal" data-open="w-terminal" aria-label="Terminal"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d1d1f"/><rect x="2" y="2" width="60" height="60" rx="12" fill="#2b2b2d"/><path d="M15 22l11 9-11 9" fill="none" stroke="#e6e6e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="30" y="38" width="17" height="4.5" rx="2" fill="#e6e6e6"/></svg></span><span class="app__label">Terminal</span></a>
-    <a class="app" href="#w-code" data-open="w-code" aria-label="Code"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f6fc6"/><path d="M24 20 12 32l12 12M40 20l12 12-12 12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 16 29 48" stroke="#9fd0ff" stroke-width="4" stroke-linecap="round"/></svg></span><span class="app__label">Code</span></a>
     <a class="app" href="#w-error" data-open="w-error" aria-label="Problems"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 61 56H3z" fill="#ffcc00" stroke="#e0a800" stroke-width="2" stroke-linejoin="round"/><rect x="29" y="22" width="6" height="20" rx="3" fill="#1d1d1f"/><circle cx="32" cy="48" r="3.6" fill="#1d1d1f"/></svg></span><span class="app__label">Problems</span></a>
   </div>
   <span class="dock__sep dock__sep--mac" aria-hidden="true"></span>
@@ -93,97 +100,107 @@
 <section class="win win--info" id="w-tiketvisa" role="dialog" aria-labelledby="w-tiketvisa-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-tiketvisa-t"><span class="win__pre">Information about: </span>TiketVisa</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/tiketvisa-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>TiketVisa</h3><p>Startup · Founder</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/tiketvisa.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>TiketVisa</h3><p>Startup · Founder</p></div></div>
     <div class="info__text"><p>Onward flight reservations and hotel bookings with a real PNR, for travellers who have to show a ticket out at the embassy or the airport.</p><p>I moved the site off WordPress to a static Next.js build in 18 languages, with Cloudflare Workers routing between the new pages and the blog, handling forms and serving images.</p></div>
     <dl class="info__meta"><div><dt>Role</dt><dd>Founder, product and engineering</dd></div><div><dt>Built with</dt><dd>Next.js, Cloudflare Workers, WordPress</dd></div><div><dt>Languages</dt><dd>18</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/tiketvisa.webp" width="1200" height="750" alt="Homepage of TiketVisa" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/tiketvisa.webp" width="540" height="1169" alt="TiketVisa on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://tiketvisa.com" target="_blank" rel="noopener">Open tiketvisa.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-unlisim" role="dialog" aria-labelledby="w-unlisim-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-unlisim-t"><span class="win__pre">Information about: </span>UnliSIM</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/unlisim-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>UnliSIM</h3><p>Startup · Founder</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/unlisim.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>UnliSIM</h3><p>Startup · Founder</p></div></div>
     <div class="info__text"><p>Travel eSIMs for 200+ destinations. Pick a country and the number of days, pay with Apple Pay, Google Pay or card, and the phone is online in about two minutes. No roaming bill, no SIM swap.</p></div>
     <dl class="info__meta"><div><dt>Role</dt><dd>Founder and engineering</dd></div><div><dt>Built with</dt><dd>Next.js on Cloudflare (OpenNext)</dd></div><div><dt>Coverage</dt><dd>200+ destinations</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/unlisim.webp" width="1200" height="750" alt="Homepage of UnliSIM" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/unlisim.webp" width="540" height="1169" alt="UnliSIM on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://unlisim.com" target="_blank" rel="noopener">Open unlisim.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-valuto" role="dialog" aria-labelledby="w-valuto-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-valuto-t"><span class="win__pre">Information about: </span>Valuto</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/valuto-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Valuto</h3><p>Startup · Founder</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#f15a29;--pad:0%"><img src="img/fav/valuto.webp" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Valuto</h3><p>Startup · Founder</p></div></div>
     <div class="info__text"><p>A travel wallet that pays merchants abroad by scanning their own local QR codes. One balance in dollars, and the exchange rate is on the screen before you tap.</p><p>A React web app, native iOS and Android apps from one Expo codebase, and a small Hono worker that sends every download link to the right store.</p></div>
     <dl class="info__meta"><div><dt>Role</dt><dd>Founder, web and mobile</dd></div><div><dt>Built with</dt><dd>React, Expo, Supabase, Solana, Cloudflare</dd></div><div><dt>Platforms</dt><dd>Web, iOS, Android</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/valuto.webp" width="1200" height="750" alt="Homepage of Valuto" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-mainpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-paymentpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-transferspage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/valuto.webp" width="540" height="1169" alt="Valuto on a phone" loading="lazy"><img class="shot" src="img/p/valuto-app-mainpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"><img class="shot" src="img/p/valuto-app-paymentpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"></div></details>
     <a class="mac-button" href="https://getvaluto.com" target="_blank" rel="noopener">Open getvaluto.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-anonympass" role="dialog" aria-labelledby="w-anonympass-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-anonympass-t"><span class="win__pre">Information about: </span>AnonymPass</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/anonympass-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>AnonymPass</h3><p>Startup · Founder</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:20%"><img src="img/fav/anonympass.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>AnonymPass</h3><p>Startup · Founder</p></div></div>
     <div class="info__text"><p>A crypto payment gateway for merchants that card processors turn away. Funds land straight in the merchant&#x27;s wallet on Tron or Solana and settle in under 30 seconds, for a flat 0.25% fee.</p></div>
     <dl class="info__meta"><div><dt>Role</dt><dd>Founder and engineering</dd></div><div><dt>Chains</dt><dd>Tron, Solana</dd></div><div><dt>Fee</dt><dd>0.25% flat</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/anonympass.webp" width="1200" height="750" alt="Homepage of AnonymPass" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/anonympass.webp" width="540" height="1169" alt="AnonymPass on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://anonympass.com" target="_blank" rel="noopener">Open anonympass.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-digitalrocket" role="dialog" aria-labelledby="w-digitalrocket-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-digitalrocket-t"><span class="win__pre">Information about: </span>Digital Rocket</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/digitalrocket-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Digital Rocket</h3><p>Client · Website</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#000000;--pad:0%"><img src="img/fav/digitalrocket.webp" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Digital Rocket</h3><p>Client · Website</p></div></div>
     <div class="info__text"><p>Website for an AI-native growth marketing agency in Dubai, blending SEO, AI search and performance media.</p></div>
     <dl class="info__meta"><div><dt>Client</dt><dd>Digital Rocket, Dubai</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/digitalrocket.webp" width="1200" height="750" alt="Homepage of Digital Rocket" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/digitalrocket.webp" width="540" height="1169" alt="Digital Rocket on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://digital-rocket.io" target="_blank" rel="noopener">Open digital-rocket.io ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-undrgoods" role="dialog" aria-labelledby="w-undrgoods-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-undrgoods-t"><span class="win__pre">Information about: </span>Undrgoods</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/undrgoods-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Undrgoods</h3><p>Client · Online store</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#1b2a4e;--pad:0%"><img src="img/fav/undrgoods.webp" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Undrgoods</h3><p>Client · Online store</p></div></div>
     <div class="info__text"><p>Online store for an underwear and loungewear brand.</p></div>
     <dl class="info__meta"><div><dt>Client</dt><dd>Undrgoods</dd></div><div><dt>Work</dt><dd>E-commerce store</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/undrgoods.webp" width="1200" height="750" alt="Homepage of Undrgoods" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/undrgoods.webp" width="540" height="1169" alt="Undrgoods on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://undrgoods.com" target="_blank" rel="noopener">Open undrgoods.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-missingstone" role="dialog" aria-labelledby="w-missingstone-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-missingstone-t"><span class="win__pre">Information about: </span>The Missing Stone</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/missingstone-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>The Missing Stone</h3><p>Client · Online store</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#f6efe6;--pad:24%"><img src="img/fav/missingstone.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>The Missing Stone</h3><p>Client · Online store</p></div></div>
     <div class="info__text"><p>Online store for a jewellery brand: collections, bangles, bracelets, earrings, necklaces and custom-made pieces.</p></div>
     <dl class="info__meta"><div><dt>Client</dt><dd>The Missing Stone</dd></div><div><dt>Work</dt><dd>E-commerce store</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/missingstone.webp" width="1200" height="750" alt="Homepage of The Missing Stone" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/missingstone.webp" width="540" height="1169" alt="The Missing Stone on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://themissingstone.com" target="_blank" rel="noopener">Open themissingstone.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-asiainsight" role="dialog" aria-labelledby="w-asiainsight-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-asiainsight-t"><span class="win__pre">Information about: </span>Asia Insight</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/asiainsight-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Asia Insight</h3><p>Client · Website</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:14%"><img src="img/fav/asiainsight.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Asia Insight</h3><p>Client · Website</p></div></div>
     <div class="info__text"><p>Website for a destination management company running tours to South-East Asia, in Azerbaijani.</p></div>
     <dl class="info__meta"><div><dt>Client</dt><dd>Asia Insight, Baku</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/asiainsight.webp" width="1200" height="750" alt="Homepage of Asia Insight" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/asiainsight.webp" width="540" height="1169" alt="Asia Insight on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://asiainsight.az" target="_blank" rel="noopener">Open asiainsight.az ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-harborfalcon" role="dialog" aria-labelledby="w-harborfalcon-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-harborfalcon-t"><span class="win__pre">Information about: </span>Harbor Falcon</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><img src="img/p/harborfalcon-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Harbor Falcon</h3><p>Client · Website</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/harborfalcon.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Harbor Falcon</h3><p>Client · Website</p></div></div>
     <div class="info__text"><p>Website for a US home-buying company: get a competitive cash offer for your house, with no agents and no open houses.</p></div>
     <dl class="info__meta"><div><dt>Client</dt><dd>Harbor Falcon, United States</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
-    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/harborfalcon.webp" width="1200" height="750" alt="Homepage of Harbor Falcon" loading="lazy"></div></details>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/harborfalcon.webp" width="540" height="1169" alt="Harbor Falcon on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://harborfalcon.com" target="_blank" rel="noopener">Open harborfalcon.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-travelsolotiket" role="dialog" aria-labelledby="w-travelsolotiket-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-travelsolotiket-t"><span class="win__pre">Information about: </span>TravelSoloTiket</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:16%"><img src="img/fav/travelsolotiket.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>TravelSoloTiket</h3><p>Client · Website</p></div></div>
+    <div class="info__text"><p>Verified flight and hotel reservations in under 60 seconds: onward or return flight reservations and hotel bookings for visa applications, airline check-in and border control.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>TravelSoloTiket</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/travelsolotiket.webp" width="540" height="1169" alt="TravelSoloTiket on a phone" loading="lazy"></div></details>
+    <a class="mac-button" href="https://travelsolotiket.com" target="_blank" rel="noopener">Open travelsolotiket.com ↗</a>
   </div>
 </section>
 <section class="win win--info" id="w-course" role="dialog" aria-labelledby="w-course-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-course-t"><span class="win__pre">Information about: </span>Elementor course</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span><div><h3>Elementor course</h3><p>Teaching · Udemy</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile tile--glyph"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span></span><div><h3>Elementor course</h3><p>Teaching · Udemy</p></div></div>
     <div class="info__text"><p>Elementor A&#x27;dan Z&#x27;ye: a web design course on Udemy, taught in Turkish. More than 2,600 students have taken it, and it is rated 4.5 out of 5.</p></div>
     <dl class="info__meta"><div><dt>Students</dt><dd>2,600+</dd></div><div><dt>Rating</dt><dd>4.5 / 5</dd></div><div><dt>Language</dt><dd>Turkish</dd></div></dl>
     
@@ -193,10 +210,10 @@
 <section class="win win--info" id="w-gevelopers" role="dialog" aria-labelledby="w-gevelopers-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-gevelopers-t"><span class="win__pre">Information about: </span>Gevelopers LLC</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body">
-    <div class="info__head"><span class="info__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M4 14a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#5ac8fa"/><path d="M4 22h56v30a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#7ad7ff"/><text x="32" y="46" text-anchor="middle" font-size="16" font-weight="800" fill="#0a6aa1" font-family="system-ui">G</text></svg></span><div><h3>Gevelopers LLC</h3><p>Company · Since 2022</p></div></div>
+    <div class="info__head"><span class="info__icon"><span class="tile" style="--tile:#ffffff;--pad:20%"><img src="img/fav/gevelopers.svg" width="128" height="128" alt="" draggable="false"></span></span><div><h3>Gevelopers LLC</h3><p>Company · Since 2022</p></div></div>
     <div class="info__text"><p>My company. A remote team spread across the globe, building custom web and mobile apps and games for clients: from a startup MVP from scratch to scaling a product that already exists.</p><p>Before Gevelopers I designed and built 200+ WordPress sites at ValisoyMedia, worked on the Kontakt Home WooCommerce store, and started out doing SEO at ELSEO in Baku.</p></div>
     <dl class="info__meta"><div><dt>Registered</dt><dd>Sheridan, Wyoming</dd></div><div><dt>Team</dt><dd>Remote, worldwide</dd></div><div><dt>Builds</dt><dd>Web, mobile, games</dd></div></dl>
-    
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/m/gevelopers.webp" width="540" height="1169" alt="Gevelopers LLC on a phone" loading="lazy"></div></details>
     <a class="mac-button" href="https://gevelopers.com" target="_blank" rel="noopener">Open gevelopers.com ↗</a>
   </div>
 </section>
@@ -277,47 +294,24 @@
 <section class="win win--terminal" id="w-terminal" role="dialog" aria-labelledby="w-terminal-t">
   <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-terminal-t">vali — zsh — 80×24</h2><a class="win__done" href="#">Done</a></header>
   <div class="win__body term" data-term>
-    <pre class="term__out" aria-live="polite">Last login: <span data-login></span> on ttys001
-Type <b>help</b> to see what this terminal can do.
-</pre>
+    <pre class="term__out" aria-live="polite"></pre>
     <form class="term__line"><label for="term-in"><span class="term__ps">vali@macbook ~ %</span></label><input id="term-in" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send"></form>
   </div>
 </section>
 
-<section class="win win--code" id="w-code" role="dialog" aria-labelledby="w-code-t">
-  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-code-t">vali.ts — vvalisoy</h2><a class="win__done" href="#">Done</a></header>
-  <div class="win__body code"><pre><code><span class="c">// Hi. This is me, typed.</span>
-<span class="k">export const</span> <span class="v">vali</span> = {
-  name: <span class="s">"Vali Valiyev"</span>,
-  handle: <span class="s">"@vvalisoy"</span>,
-  from: <span class="s">"Sumgait, Azerbaijan"</span>,
-  basedIn: <span class="s">"Baku, mostly"</span>,
-  role: <span class="s">"Software engineer"</span>,
-  company: <span class="s">"Gevelopers LLC"</span>,
-  shipping: [<span class="s">"TiketVisa"</span>, <span class="s">"UnliSIM"</span>, <span class="s">"Valuto"</span>, <span class="s">"AnonymPass"</span>],
-  stack: [<span class="s">"TypeScript"</span>, <span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Expo"</span>,
-          <span class="s">"Cloudflare Workers"</span>, <span class="s">"Supabase"</span>, <span class="s">"PHP"</span>, <span class="s">"WordPress"</span>],
-  wordpressSitesBuilt: <span class="n">200</span>,
-  udemyStudents: <span class="n">2600</span>,
-  speaks: [<span class="s">"az"</span>, <span class="s">"tr"</span>, <span class="s">"en"</span>],
-  availableForWork: <span class="k">true</span>,
-};
-
-<span class="k">export function</span> <span class="f">hire</span>(project: <span class="t">string</span>) {
-  <span class="k">return</span> <span class="f">fetch</span>(<span class="s">"mailto:vali@gevelopers.com"</span>, { body: project });
-}</code></pre></div>
-</section>
 
 <section class="win win--mail" id="w-mail" role="dialog" aria-labelledby="w-mail-t">
-  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><a class="win__done" href="#">Done</a></header>
-  <form class="win__body mail" data-mail action="mailto:vali@gevelopers.com" method="get" enctype="text/plain">
-    <div class="mail__row"><span>To:</span><span class="mail__to">Vali Valiyev &lt;vali@gevelopers.com&gt;</span></div>
-    <label class="mail__row"><span>Subject:</span><input name="subject" value="Hello Vali" autocomplete="off"></label>
-    <textarea name="body" rows="8" aria-label="Message" placeholder="What are we building?"></textarea>
-    <div class="mail__foot">
-      <span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span>
-      <button class="mac-button mac-button--blue" type="submit">Send</button>
-    </div>
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><button class="mail__send" type="submit" form="mail-form" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6l.1 6.5L15 12 3.5 13.9z" fill="currentColor"/></svg></button><a class="win__done" href="#">Cancel</a></header>
+  <form class="win__body mail" id="mail-form" data-mail action="https://formsubmit.co/vali@gevelopers.com" method="post">
+    <div class="mail__row"><span class="mail__label">To:</span><span class="mail__to" title="Fixed recipient">Vali Valiyev</span><span class="mail__addr">vali@gevelopers.com</span></div>
+    <label class="mail__row"><span class="mail__label">From:</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
+    <label class="mail__row"><span class="mail__label">Subject:</span><input name="_subject" value="Hello Vali" autocomplete="off" required></label>
+    <input type="text" name="_honey" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <textarea name="message" rows="9" aria-label="Message" placeholder="Write your message…" required></textarea>
+    <p class="mail__status" role="status" aria-live="polite"></p>
+    <div class="mail__foot"><span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span><button class="mac-button mac-button--blue" type="submit">Send</button></div>
   </form>
 </section>
 
