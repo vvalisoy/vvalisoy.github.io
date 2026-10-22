@@ -235,7 +235,7 @@
       sendBtns.forEach((b) => { b.disabled = true; });
       say('Sending…');
       try {
-        const res = await fetch('https://formsubmit.co/ajax/vali@gevelopers.com', {
+        const res = await fetch('https://formsubmit.co/ajax/ebeea50f82724b9a39378fdb2739d93c', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify(data),
