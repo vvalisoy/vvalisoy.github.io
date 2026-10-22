@@ -235,10 +235,14 @@
       sendBtns.forEach((b) => { b.disabled = true; });
       say('Sending…');
       try {
+        // url-encoded form data instead of JSON keeps this a "simple" request, so the browser skips the
+        // extra preflight round trip; give up after 20 s rather than spin forever
+        const body = new URLSearchParams(data);
         const res = await fetch('https://formsubmit.co/ajax/ebeea50f82724b9a39378fdb2739d93c', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(data),
+          headers: { Accept: 'application/json' },
+          body,
+          signal: AbortSignal.timeout ? AbortSignal.timeout(20000) : undefined,
         });
         const json = await res.json().catch(() => ({}));
         if (!res.ok || String(json.success) === 'false') throw new Error(json.message || res.statusText);
@@ -248,7 +252,7 @@
         say('Sent. Vali will reply to your address, usually within a day.', 'is-ok');
       } catch {
         const q = `subject=${encodeURIComponent(form._subject.value)}&body=${encodeURIComponent(form.message.value)}`;
-        say(`Could not send right now. <a href="mailto:vali@gevelopers.com?${q}">Open it in your mail app</a> instead.`, 'is-err');
+        say(`The mail service is not answering right now. <a href="mailto:vali@gevelopers.com?${q}">Send it from your mail app</a> instead, or try again in a minute.`, 'is-err');
       } finally {
         sendBtns.forEach((b) => { b.disabled = false; });
       }
