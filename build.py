@@ -359,17 +359,16 @@ page = f'''<!doctype html>
 
 
 <section class="win win--mail" id="w-mail" role="dialog" aria-labelledby="w-mail-t">
-  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><button class="mail__send" type="submit" form="mail-form" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6l.1 6.5L15 12 3.5 13.9z" fill="currentColor"/></svg></button><a class="win__done" href="#">Cancel</a></header>
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><a class="win__done" href="#">Cancel</a><button class="mail__send" type="submit" form="mail-form" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19.5V5M5.8 11.2 12 5l6.2 6.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></header>
   <form class="win__body mail" id="mail-form" data-mail action="https://api.web3forms.com/submit" method="post">
     <div class="mail__row"><span class="mail__label">To:</span><span class="mail__to" title="Fixed recipient">Vali Valiyev</span><span class="mail__addr">vali@gevelopers.com</span></div>
-    <label class="mail__row"><span class="mail__label">From:</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label>
     <label class="mail__row"><span class="mail__label">Subject:</span><input name="subject" value="Hello Vali" autocomplete="off" required></label>
+    <label class="mail__row"><span class="mail__label">From:</span><input type="email" name="email" placeholder="your@email.com" autocomplete="email" required></label>
     <input type="hidden" name="access_key" value="578732c5-06c1-4c9a-b583-5af530e0ff11">
     <input type="hidden" name="from_name" value="vvalisoy.github.io">
     <input type="checkbox" name="botcheck" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <textarea name="message" rows="9" aria-label="Message" placeholder="Write your message…" required></textarea>
+    <textarea name="message" rows="12" aria-label="Message" required></textarea>
     <p class="mail__status" role="status" aria-live="polite"></p>
-    <div class="mail__foot"><span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span><button class="mac-button mac-button--blue" type="submit">Send</button></div>
   </form>
 </section>
 

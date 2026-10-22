@@ -378,41 +378,42 @@ button { cursor: pointer; }
 .term__ps { color: #32d74b; white-space: nowrap; }
 .term__line input { flex: 1; min-width: 0; padding: 0; border: 0; background: transparent; outline: none; font: inherit; color: #fff; caret-color: #fff; }
 
-/* mail: Apple Mail compose */
-.win--mail { width: min(600px, 94vw); }
+/* mail: Apple Mail compose (no toolbar, no Cc, no format bar; send button top right) */
+.win--mail { width: min(640px, 94vw); height: min(600px, 78vh); --pane-tint: rgba(255, 255, 255, 0.9); }
+.win--mail:not(.is-front) { --pane-tint: rgba(250, 250, 252, 0.84); }
+.win--mail .win__bar { height: 52px; }
 .mail__send {
-  position: absolute; left: 88px; z-index: 2;
-  width: 32px; height: 32px;
+  position: absolute; right: 12px; z-index: 2;
+  width: 34px; height: 34px;
   display: grid; place-items: center;
   border: 0; border-radius: 50%;
-  background: rgba(255, 255, 255, 0.6);
-  box-shadow: var(--glass-rim), 0 2px 6px rgba(0, 0, 0, 0.08);
-  color: var(--blue);
-  transition: transform 160ms var(--spring);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: var(--glass-rim), inset 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #8e8e93;
+  transition: transform 160ms var(--spring), background-color 160ms ease, color 160ms ease;
 }
-.mail__send:hover { background: #fff; }
+.mail__send.is-ready { background: var(--blue); color: #fff; box-shadow: inset 1px 1px 0 -0.5px rgba(255, 255, 255, 0.6), 0 3px 10px rgba(10, 132, 255, 0.35); }
+.mail__send.is-ready:hover { background: #0071e3; }
 .mail__send:active { transform: scale(0.9); }
-.mail__send:disabled { color: #b0b0b5; cursor: default; }
-.mail { display: flex; flex-direction: column; padding: 0 10px 10px; }
-.mail > * { background: rgba(255, 255, 255, 0.86); }
-.mail > .sr, .mail > input[type="hidden"] { background: none; }
-.mail__row { display: flex; gap: 8px; align-items: center; min-height: 40px; padding: 6px 14px; border-bottom: 0.5px solid var(--line); font-size: 13.5px; }
-.mail__row:first-child { border-radius: 14px 14px 0 0; }
-.mail__label { flex: none; width: 58px; text-align: right; color: var(--muted); }
-.mail__to { padding: 2px 10px; border-radius: 999px; background: rgba(10, 132, 255, 0.12); color: #0a64c8; font-weight: 500; }
-.mail__addr { color: var(--muted); font-size: 12.5px; }
-.mail__row input { flex: 1; min-width: 0; border: 0; outline: none; background: transparent; padding: 4px 0; }
-.mail__row:focus-within .mail__label { color: var(--blue); }
-.mail textarea { border: 0; outline: none; resize: none; padding: 14px 16px; min-height: 200px; font-size: 14px; line-height: 1.5; }
-.mail__status { padding: 0 16px; font-size: 13px; color: var(--muted); }
+.mail__send:disabled { opacity: 0.6; cursor: default; }
+.mail { display: flex; flex-direction: column; padding: 0; background: transparent; }
+.mail__row {
+  display: flex; gap: 6px; align-items: center;
+  min-height: 40px; margin-left: 20px; padding: 0 20px 0 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+}
+.mail__label { flex: none; color: #8e8e93; }
+.mail__to { padding: 1px 8px; border-radius: 6px; background: rgba(10, 132, 255, 0.12); color: #0a64c8; }
+.mail__addr { color: #8e8e93; }
+.mail__row input { flex: 1; min-width: 0; border: 0; outline: none; background: transparent; padding: 8px 0; color: var(--ink); }
+.mail__row input::placeholder { color: #c7c7cc; }
+.mail textarea { flex: 1; border: 0; outline: none; resize: none; background: transparent; padding: 14px 20px; min-height: 220px; font-size: 13px; line-height: 1.55; }
+.mail__status { margin: 0 20px 14px; padding: 8px 12px; border-radius: 10px; font-size: 12.5px; color: var(--muted); background: rgba(0, 0, 0, 0.04); }
 .mail__status:empty { display: none; }
-.mail__status.is-ok { color: #1f9d3a; padding-bottom: 10px; }
-.mail__status.is-err { color: #d70015; padding-bottom: 10px; }
+.mail__status.is-ok { color: #1a7f37; background: rgba(52, 199, 89, 0.12); }
+.mail__status.is-err { color: #c00014; background: rgba(255, 59, 48, 0.1); }
 .mail__status a { color: var(--blue); }
-.mail__foot { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px 12px; border-top: 0.5px solid var(--line); border-radius: 0 0 14px 14px; }
-.mail__foot .mac-button { margin: 0; }
-.mail__alt { font-size: 13px; color: var(--muted); }
-.mail__alt a { color: var(--blue); text-decoration: none; }
 .win--mail.is-sent .mail { animation: whoosh 600ms var(--ease) both; }
 @keyframes whoosh { 40% { transform: translateY(-14px) scale(0.98); opacity: 0.5; } 100% { transform: none; opacity: 1; } }
 
@@ -532,13 +533,13 @@ button { cursor: pointer; }
   .term__line { align-items: center; }
 
   /* iOS Mail: Cancel on the left, title in the middle, a blue send arrow on the right */
-  .win--mail .win__bar { gap: 10px; }
+  .win--mail, .js .win--mail { height: 100%; }
+  .win--mail .win__bar { gap: 10px; height: auto; }
   .win--mail .win__done { order: -1; margin: 0; }
   .win--mail .win__title { text-align: center; }
-  .mail__send { position: static; background: var(--blue); color: #fff; width: 36px; height: 36px; }
-  .mail__send:hover { background: #0071e3; }
-  .mail__send:disabled { background: #c7c7cc; color: #fff; }
-  .mail__foot .mac-button { display: none; }
+  .mail__send { position: static; width: 36px; height: 36px; }
+  .mail__row { margin-left: 16px; padding-right: 16px; font-size: 15px; }
+  .mail textarea { padding: 14px 16px; }
 
   .win--alert, .js .win--alert {
     inset: auto !important;

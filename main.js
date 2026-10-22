@@ -216,7 +216,10 @@
   const form = document.querySelector('[data-mail]');
   if (form) {
     const status = form.querySelector('.mail__status');
-    const sendBtns = document.querySelectorAll('.mail__send, .mail__foot .mac-button');
+    const sendBtns = document.querySelectorAll('.mail__send');
+    // like Mail, the send button turns blue once there is a sender and a message
+    const ready = () => sendBtns.forEach((b) => b.classList.toggle('is-ready', form.email.validity.valid && form.message.value.trim() !== ''));
+    form.addEventListener('input', ready);
     const say = (text, cls) => { status.className = `mail__status ${cls || ''}`; status.innerHTML = text; };
     onOpen['w-mail'] = (win) => {
       if (!phone.matches) win.querySelector('input[name="email"]').focus({ preventScroll: true });
@@ -264,6 +267,7 @@
         const win = form.closest('.win');
         win.classList.remove('is-sent'); void win.offsetWidth; win.classList.add('is-sent');
         form.message.value = '';
+        ready();
         say('Sent. Vali will reply to your address, usually within a day.', 'is-ok');
       } catch {
         const q = `subject=${encodeURIComponent(form.subject.value)}&body=${encodeURIComponent(form.message.value)}`;
