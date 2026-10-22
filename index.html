@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vali Valiyev — Software engineer</title>
-<meta name="description" content="Vali Valiyev (vvalisoy) builds travel products and websites: TiketVisa, UnliSIM, Valuto, AnonymPass, and 200+ client sites through Gevelopers LLC.">
-<meta name="theme-color" content="#0f0f0f">
+<meta name="description" content="Vali Valiyev (vvalisoy) is a software engineer and digital nomad from Azerbaijan, founder of Gevelopers LLC and builder of TiketVisa, UnliSIM, Valuto and AnonymPass.">
+<meta name="theme-color" content="#d9d9d9">
 <link rel="canonical" href="https://vvalisoy.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vvalisoy.github.io/">
@@ -16,7 +16,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
@@ -25,263 +25,329 @@
 </head>
 <body>
 
-<header class="hero" id="top">
-  <figure class="hero__photo">
-    <img src="img/vali.webp" width="1000" height="1000" alt="Portrait of Vali Valiyev in a white shirt and striped tie" fetchpriority="high">
-  </figure>
-  <nav class="nav" aria-label="Main">
-    <a href="#work">Work</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a class="nav__action" href="mailto:vali@gevelopers.com?subject=Hello%20Vali">Email me</a>
-  </nav>
-  <div class="hero__intro">
-    <p class="hero__lede">Vali Valiyev builds travel products and websites, from wherever the Wi-Fi holds.</p>
+<div class="wallpaper" aria-hidden="true"><img src="img/vali.webp" width="1000" height="1000" alt=""></div>
+
+<header class="menubar">
+  <div class="menubar__left">
+    <a class="menubar__logo" href="#w-about" data-open="w-about" aria-label="About Vali">V</a>
+    <a class="menubar__app" href="#w-about" data-open="w-about">Vali Valiyev</a>
+    <a href="#w-terminal" data-open="w-terminal">Terminal</a>
+    <a href="#w-photos" data-open="w-photos">Gallery</a>
+    <a href="#w-mail" data-open="w-mail">Contact</a>
   </div>
-  <h1 class="hero__name"><span class="sr">Vali Valiyev, </span>vvalisoy</h1>
+  <div class="menubar__right">
+    <span class="status-icons" aria-hidden="true">
+      <svg viewBox="0 0 18 12" width="18" height="12"><g fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2.5" width="3" height="9.5" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></g></svg>
+      <svg viewBox="0 0 16 12" width="16" height="12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0zM3.5 6.9a6.4 6.4 0 0 1 9 0l1.5-1.5a8.5 8.5 0 0 0-12 0zM.6 4a10.6 10.6 0 0 1 14.8 0L16.9 2.5a12.7 12.7 0 0 0-17.8 0z" fill="currentColor"/></svg>
+      <svg viewBox="0 0 27 12" width="27" height="12"><rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="16" height="8" rx="1.6" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor" opacity=".45"/></svg>
+    </span>
+    <span class="clock" data-clock data-tz="Asia/Baku"><span class="clock__city">Baku</span> <span data-clock-time>GMT+4</span></span>
+  </div>
 </header>
 
-<main>
-
-  <section class="work" id="work" aria-labelledby="work-h">
-    <h2 class="sr" id="work-h">Work</h2>
-    <p class="work__names" data-reveal>
-      <strong>Startups:</strong>
-      <a href="https://tiketvisa.com" target="_blank" rel="noopener">TiketVisa<span class="frame"><img src="img/th-tiketvisa.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://unlisim.com" target="_blank" rel="noopener">UnliSIM<span class="frame"><img src="img/th-unlisim.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://getvaluto.com" target="_blank" rel="noopener">Valuto<span class="frame"><img src="img/th-valuto.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://anonympass.com" target="_blank" rel="noopener">AnonymPass<span class="frame"><img src="img/th-anonympass.webp" width="480" height="300" alt=""></span></a>.
-      <strong>Clients:</strong>
-      <a href="https://digital-rocket.io" target="_blank" rel="noopener">Digital Rocket<span class="frame"><img src="img/th-digitalrocket.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://undrgoods.com" target="_blank" rel="noopener">Undrgoods<span class="frame"><img src="img/th-undrgoods.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://themissingstone.com" target="_blank" rel="noopener">The Missing Stone<span class="frame"><img src="img/th-missingstone.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://asiainsight.az" target="_blank" rel="noopener">Asia Insight<span class="frame"><img src="img/th-asiainsight.webp" width="480" height="300" alt=""></span></a>,
-      <a href="https://harborfalcon.com" target="_blank" rel="noopener">Harbor Falcon<span class="frame"><img src="img/th-harborfalcon.webp" width="480" height="300" alt=""></span></a>.
-    </p>
-    <p class="work__count" data-reveal>Four startups and 200+ client websites, 2015 to today.</p>
+<main class="desktop" id="desktop">
+  <h1 class="sr">Vali Valiyev, software engineer</h1>
+  <section class="widget" aria-label="Vali Valiyev">
+    <p class="widget__name">Vali Valiyev</p>
+    <p class="widget__role">Software engineer · Founder of Gevelopers</p>
+    <p class="widget__time"><span data-clock-big>--:--</span> in Baku</p>
   </section>
-
-  <section class="products" id="products" aria-labelledby="products-h">
-    <h2 class="sr" id="products-h">Products</h2>
-
-    <article class="product" id="p-tiketvisa" data-product>
-      <div class="product__plate"><img src="img/tiketvisa.webp" width="1200" height="1200" alt="The TiketVisa homepage: visa-ready tickets in 60 seconds, with a sample DPS to JFK reservation" loading="lazy"></div>
-      <div class="product__side">
-        <div class="tabs" role="tablist" aria-label="Products">
-          <a href="#p-tiketvisa" role="tab" aria-selected="true">TiketVisa</a>
-          <a href="#p-unlisim" role="tab" aria-selected="false">UnliSIM</a>
-          <a href="#p-valuto" role="tab" aria-selected="false">Valuto</a>
-          <a href="#p-anonympass" role="tab" aria-selected="false">AnonymPass</a>
-        </div>
-        <div class="product__text">
-          <h3>Tickets for the border</h3>
-          <p>Onward flight reservations and hotel bookings with a real PNR, for travellers who have to show a ticket out at the embassy or the airport. Published in 18 languages.</p>
-        </div>
-        <div class="product__actions">
-          <a class="cell cell--ink" href="https://tiketvisa.com" target="_blank" rel="noopener">Visit tiketvisa.com</a>
-          <a class="cell" href="mailto:vali@gevelopers.com?subject=About%20TiketVisa">Ask about it</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="product" id="p-unlisim" data-product>
-      <div class="product__plate"><img src="img/unlisim.webp" width="1200" height="1200" alt="The UnliSIM homepage: online the moment you land, with a country search and trip length picker" loading="lazy"></div>
-      <div class="product__side">
-        <div class="tabs" role="tablist" aria-label="Products">
-          <a href="#p-tiketvisa" role="tab" aria-selected="false">TiketVisa</a>
-          <a href="#p-unlisim" role="tab" aria-selected="true">UnliSIM</a>
-          <a href="#p-valuto" role="tab" aria-selected="false">Valuto</a>
-          <a href="#p-anonympass" role="tab" aria-selected="false">AnonymPass</a>
-        </div>
-        <div class="product__text">
-          <h3>Online on landing</h3>
-          <p>Travel eSIMs for 200+ destinations. Pick the country and the days, pay with Apple Pay, Google Pay or card, and the phone is online in about two minutes. No roaming bill, no SIM swap.</p>
-        </div>
-        <div class="product__actions">
-          <a class="cell cell--ink" href="https://unlisim.com" target="_blank" rel="noopener">Visit unlisim.com</a>
-          <a class="cell" href="mailto:vali@gevelopers.com?subject=About%20UnliSIM">Ask about it</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="product" id="p-valuto" data-product>
-      <div class="product__plate"><img src="img/valuto.webp" width="1200" height="1200" alt="Two Valuto app screens: a 50,000 dong payment confirmation and the home screen with a dollar balance" loading="lazy"></div>
-      <div class="product__side">
-        <div class="tabs" role="tablist" aria-label="Products">
-          <a href="#p-tiketvisa" role="tab" aria-selected="false">TiketVisa</a>
-          <a href="#p-unlisim" role="tab" aria-selected="false">UnliSIM</a>
-          <a href="#p-valuto" role="tab" aria-selected="true">Valuto</a>
-          <a href="#p-anonympass" role="tab" aria-selected="false">AnonymPass</a>
-        </div>
-        <div class="product__text">
-          <h3>Pay like a local</h3>
-          <p>A travel wallet that pays merchants abroad by scanning their own QR codes. One balance in dollars, the rate shown before you tap. Web app plus native iOS and Android, settled on Solana.</p>
-        </div>
-        <div class="product__actions">
-          <a class="cell cell--ink" href="https://getvaluto.com" target="_blank" rel="noopener">Visit getvaluto.com</a>
-          <a class="cell" href="mailto:vali@gevelopers.com?subject=About%20Valuto">Ask about it</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="product" id="p-anonympass" data-product>
-      <div class="product__plate"><img src="img/anonympass.webp" width="1200" height="1200" alt="The AnonymPass homepage: accept crypto payments, no KYC required, beside a sample API request" loading="lazy"></div>
-      <div class="product__side">
-        <div class="tabs" role="tablist" aria-label="Products">
-          <a href="#p-tiketvisa" role="tab" aria-selected="false">TiketVisa</a>
-          <a href="#p-unlisim" role="tab" aria-selected="false">UnliSIM</a>
-          <a href="#p-valuto" role="tab" aria-selected="false">Valuto</a>
-          <a href="#p-anonympass" role="tab" aria-selected="true">AnonymPass</a>
-        </div>
-        <div class="product__text">
-          <h3>Crypto checkout</h3>
-          <p>A payment gateway for merchants that card processors turn away. Funds land straight in the merchant's wallet on Tron or Solana, settle in under 30 seconds, for a flat 0.25% fee.</p>
-        </div>
-        <div class="product__actions">
-          <a class="cell cell--ink" href="https://anonympass.com" target="_blank" rel="noopener">Visit anonympass.com</a>
-          <a class="cell" href="mailto:vali@gevelopers.com?subject=About%20AnonymPass">Ask about it</a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <section class="ledger" aria-labelledby="ledger-h">
-    <h2 class="sr" id="ledger-h">Everything shipped</h2>
-    <table class="ledger__table">
-      <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup>
-      <tbody>
-        <tr class="ledger__group"><th colspan="4" scope="colgroup">Startups</th></tr>
-        <tr data-reveal><td><a href="https://tiketvisa.com" target="_blank" rel="noopener">TiketVisa</a></td><td>Onward tickets, hotel bookings</td><td>Founder</td><td>tiketvisa.com</td></tr>
-        <tr data-reveal><td><a href="https://unlisim.com" target="_blank" rel="noopener">UnliSIM</a></td><td>Travel eSIM, 200+ countries</td><td>Founder</td><td>unlisim.com</td></tr>
-        <tr data-reveal><td><a href="https://getvaluto.com" target="_blank" rel="noopener">Valuto</a></td><td>QR payments abroad</td><td>Founder</td><td>getvaluto.com</td></tr>
-        <tr data-reveal><td><a href="https://anonympass.com" target="_blank" rel="noopener">AnonymPass</a></td><td>Crypto payment gateway</td><td>Founder</td><td>anonympass.com</td></tr>
-        <tr class="ledger__group"><th colspan="4" scope="colgroup">Client brands</th></tr>
-        <tr data-reveal><td><a href="https://digital-rocket.io" target="_blank" rel="noopener">Digital Rocket</a></td><td>Growth agency, Dubai</td><td>Website</td><td>digital-rocket.io</td></tr>
-        <tr data-reveal><td><a href="https://undrgoods.com" target="_blank" rel="noopener">Undrgoods</a></td><td>Underwear and loungewear</td><td>Store</td><td>undrgoods.com</td></tr>
-        <tr data-reveal><td><a href="https://themissingstone.com" target="_blank" rel="noopener">The Missing Stone</a></td><td>Jewellery</td><td>Store</td><td>themissingstone.com</td></tr>
-        <tr data-reveal><td><a href="https://asiainsight.az" target="_blank" rel="noopener">Asia Insight</a></td><td>Tours to South-East Asia</td><td>Website</td><td>asiainsight.az</td></tr>
-        <tr data-reveal><td><a href="https://harborfalcon.com" target="_blank" rel="noopener">Harbor Falcon</a></td><td>Home buyers, United States</td><td>Website</td><td>harborfalcon.com</td></tr>
-        <tr class="ledger__group"><th colspan="4" scope="colgroup">Teaching</th></tr>
-        <tr data-reveal><td><a href="https://www.udemy.com/course/elementor-a-dan-z-ye-ogren-elementorla-web-sitesi-tasarla/" target="_blank" rel="noopener">Elementor A'dan Z'ye</a></td><td>Web design course, in Turkish</td><td>Instructor</td><td>udemy.com</td></tr>
-      </tbody>
-    </table>
-    <div class="strip">
-      <figure data-reveal><img src="img/client-digitalrocket.webp" width="1440" height="900" alt="Digital Rocket homepage: built to find growth others miss, above a wall of client logos" loading="lazy"><figcaption>Digital Rocket, Dubai</figcaption></figure>
-      <figure data-reveal><img src="img/client-missingstone.webp" width="1440" height="900" alt="The Missing Stone homepage: two women laughing in the Live Life jewellery collection" loading="lazy"><figcaption>The Missing Stone</figcaption></figure>
-      <figure data-reveal><img src="img/client-harborfalcon.webp" width="1440" height="900" alt="Harbor Falcon homepage: a suburban house under the line get a competitive offer for your house" loading="lazy"><figcaption>Harbor Falcon</figcaption></figure>
-    </div>
-  </section>
-
-  <section class="figures" aria-labelledby="figures-h">
-    <figure class="figures__photo" data-reveal><img src="img/valuto-home.webp" width="900" height="900" alt="The Valuto app home screen greeting Vali, with a dollar balance and Scan to pay button" loading="lazy"></figure>
-    <div class="figures__inner">
-      <h2 id="figures-h" data-reveal>Counted, roughly</h2>
-      <dl>
-        <div data-reveal><dt>200+</dt><dd>WordPress sites designed and built at ValisoyMedia between 2018 and 2022.</dd></div>
-        <div data-reveal><dt>2,600+</dt><dd>students on my Elementor course on Udemy, taught in Turkish and rated 4.5 out of 5.</dd></div>
-        <div data-reveal><dt>100+</dt><dd>WordPress themes worked with, alongside custom plugins and Shopify and OpenCart stores.</dd></div>
-        <div data-reveal><dt>18</dt><dd>languages TiketVisa is published in, across 144 pages per language set.</dd></div>
-        <div data-reveal><dt>11</dt><dd>years of shipping for the web, since a first SEO job in Baku in 2015.</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="about" id="about" aria-labelledby="about-h">
-    <h2 class="sr" id="about-h">About</h2>
-    <div class="about__row">
-      <dl class="about__facts" data-reveal>
-        <div><dt>Born</dt><dd>Sumgait, Azerbaijan</dd></div>
-        <div><dt>Company</dt><dd>Gevelopers LLC, Wyoming</dd></div>
-        <div><dt>Speaks</dt><dd>Azerbaijani, Turkish, English</dd></div>
-      </dl>
-      <p class="about__para" data-reveal>I trained as a pharmacist in Baku and became a developer instead: SEO at ELSEO in 2015, WooCommerce at Kontakt Home, then 200+ WordPress sites at ValisoyMedia. Since 2022 I run Gevelopers, a remote team building web and mobile apps, and my own travel products from whichever city I am in that month.</p>
-    </div>
-    <div class="about__row about__row--places">
-      <p class="about__word" data-reveal>Places</p>
-      <div class="places">
-        <figure data-reveal>
-          <img src="img/sumgait.webp" width="1600" height="900" alt="A boulevard of pine trees in Sumgait, with apartment blocks and the Caspian Sea beyond" loading="lazy">
-          <figcaption>Sumgait, where I was born</figcaption>
-        </figure>
-        <figure data-reveal>
-          <video muted loop playsinline preload="metadata" poster="assets/baku-night-poster.jpg" width="854" height="480" aria-hidden="true"><source src="assets/baku-night.webm" type="video/webm"></video>
-          <figcaption>Baku at night, where I studied</figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="about__row about__row--record">
-      <p class="about__word" data-reveal>Record</p>
-      <div class="about__lists">
-        <ul data-reveal>
-          <li><span>Gevelopers LLC</span><span>2022–now</span></li>
-          <li><span>ValisoyMedia</span><span>2018–22</span></li>
-          <li><span>Kontakt Home</span><span>2016–18</span></li>
-          <li><span>ELSEO</span><span>2015–16</span></li>
-        </ul>
-        <ul data-reveal>
-          <li><span>Computer Science, UW–Milwaukee</span><span>2021–22</span></li>
-          <li><span>Pharmacy, Azerbaijan Medical University</span><span>2013–17</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="about__row about__row--record">
-      <p class="about__word" data-reveal>Tools</p>
-      <div class="about__lists">
-        <ul data-reveal>
-          <li><span>WordPress and WooCommerce</span></li>
-          <li><span>PHP, MySQL</span></li>
-          <li><span>JavaScript and TypeScript</span></li>
-          <li><span>React and Next.js</span></li>
-        </ul>
-        <ul data-reveal>
-          <li><span>React Native with Expo</span></li>
-          <li><span>Cloudflare Workers</span></li>
-          <li><span>Supabase</span></li>
-          <li><span>Solana payments</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact" aria-labelledby="contact-h">
-    <h2 class="sr" id="contact-h">Contact</h2>
-    <a class="contact__row" href="mailto:vali@gevelopers.com" data-reveal><span>vali@gevelopers.com</span></a>
-    <a class="contact__row" href="https://t.me/vvalisoy" target="_blank" rel="noopener" data-reveal><span>Telegram @vvalisoy</span></a>
-    <a class="contact__row" href="https://gevelopers.com" target="_blank" rel="noopener" data-reveal><span>Gevelopers, Sheridan WY</span></a>
-    <div class="contact__row contact__row--time" data-reveal data-clock data-city="Baku" data-tz="Asia/Baku">
-      <span><span data-clock-city>Baku</span><span data-clock-time>, GMT+4</span></span>
-      <span class="contact__note" data-clock-note>Vali works across time zones; replies usually come within a day.</span>
-    </div>
-    <div class="contact__row contact__row--hello" data-reveal>
-      <span>Say hello</span>
-      <a class="round" href="mailto:vali@gevelopers.com?subject=Hello%20Vali" aria-label="Email Vali">
-        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
-      </a>
-    </div>
-  </section>
-
+  <div class="icons">
+    <a class="icon" href="#w-tiketvisa" data-open="w-tiketvisa" style="--x:31%;--y:15%"><span class="icon__img"><img src="img/p/tiketvisa-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">TiketVisa</span></a><a class="icon" href="#w-unlisim" data-open="w-unlisim" style="--x:46%;--y:9%"><span class="icon__img"><img src="img/p/unlisim-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">UnliSIM</span></a><a class="icon" href="#w-valuto" data-open="w-valuto" style="--x:61%;--y:14%"><span class="icon__img"><img src="img/p/valuto-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Valuto</span></a><a class="icon" href="#w-anonympass" data-open="w-anonympass" style="--x:73%;--y:27%"><span class="icon__img"><img src="img/p/anonympass-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">AnonymPass</span></a><a class="icon" href="#w-digitalrocket" data-open="w-digitalrocket" style="--x:19%;--y:31%"><span class="icon__img"><img src="img/p/digitalrocket-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Digital Rocket</span></a><a class="icon" href="#w-undrgoods" data-open="w-undrgoods" style="--x:78%;--y:47%"><span class="icon__img"><img src="img/p/undrgoods-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Undrgoods</span></a><a class="icon" href="#w-missingstone" data-open="w-missingstone" style="--x:23%;--y:53%"><span class="icon__img"><img src="img/p/missingstone-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">The Missing Stone</span></a><a class="icon" href="#w-asiainsight" data-open="w-asiainsight" style="--x:71%;--y:66%"><span class="icon__img"><img src="img/p/asiainsight-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Asia Insight</span></a><a class="icon" href="#w-harborfalcon" data-open="w-harborfalcon" style="--x:33%;--y:71%"><span class="icon__img"><img src="img/p/harborfalcon-icon.webp" width="320" height="320" alt="" draggable="false"></span><span class="icon__label">Harbor Falcon</span></a><a class="icon" href="#w-course" data-open="w-course" style="--x:54%;--y:75%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span><span class="icon__label">Elementor course</span></a><a class="icon" href="#w-gevelopers" data-open="w-gevelopers" style="--x:10%;--y:72%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M4 14a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#5ac8fa"/><path d="M4 22h56v30a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#7ad7ff"/><text x="32" y="46" text-anchor="middle" font-size="16" font-weight="800" fill="#0a6aa1" font-family="system-ui">G</text></svg></span><span class="icon__label">Gevelopers LLC</span></a>
+    <a class="icon" href="#w-about" data-open="w-about" style="--x:84%;--y:12%"><span class="icon__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 4h26l12 12v44H14z" fill="#fff"/><path d="M40 4v12h12" fill="#e5e5e5"/><g fill="#9a9a9a"><rect x="20" y="24" width="24" height="3"/><rect x="20" y="31" width="20" height="3"/><rect x="20" y="38" width="24" height="3"/><rect x="20" y="45" width="14" height="3"/></g><text x="32" y="17" text-anchor="middle" font-size="8" font-weight="800" fill="#111" font-family="system-ui">MD</text></svg></span><span class="icon__label">README.md</span></a>
+  </div>
+  <div class="phone-apps">
+    <a class="app" href="#w-terminal" data-open="w-terminal" aria-label="Terminal"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d1d1f"/><rect x="2" y="2" width="60" height="60" rx="12" fill="#2b2b2d"/><path d="M15 22l11 9-11 9" fill="none" stroke="#e6e6e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="30" y="38" width="17" height="4.5" rx="2" fill="#e6e6e6"/></svg></span><span class="app__label">Terminal</span></a>
+    <a class="app" href="#w-code" data-open="w-code" aria-label="Code"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f6fc6"/><path d="M24 20 12 32l12 12M40 20l12 12-12 12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 16 29 48" stroke="#9fd0ff" stroke-width="4" stroke-linecap="round"/></svg></span><span class="app__label">Code</span></a>
+    <a class="app" href="#w-error" data-open="w-error" aria-label="Problems"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 61 56H3z" fill="#ffcc00" stroke="#e0a800" stroke-width="2" stroke-linejoin="round"/><rect x="29" y="22" width="6" height="20" rx="3" fill="#1d1d1f"/><circle cx="32" cy="48" r="3.6" fill="#1d1d1f"/></svg></span><span class="app__label">Problems</span></a>
+    <a class="app" href="https://github.com/vvalisoy" target="_blank" rel="noopener" aria-label="GitHub"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><path transform="translate(12 12) scale(1.667)" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3" fill="#111"/></svg></span><span class="app__label">GitHub</span></a>
+    <a class="app" href="https://t.me/vvalisoy" target="_blank" rel="noopener" aria-label="Telegram"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2aabee"/><path d="M13 31.5 47 18.4c1.6-.6 3 .4 2.5 2.8l-5.8 27.3c-.4 1.9-1.6 2.4-3.2 1.5l-8.8-6.5-4.2 4.1c-.5.5-.9.9-1.8.9l.6-9 16.4-14.8c.7-.6-.2-1-1.1-.4L22 37.1l-8.7-2.7c-1.9-.6-1.9-1.9.4-2.9z" fill="#fff"/></svg></span><span class="app__label">Telegram</span></a>
+    <a class="app" href="#w-trash" data-open="w-trash" aria-label="Trash"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 18h36l-3 40a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4z" fill="#e9e9ec" stroke="#bdbdc2" stroke-width="2"/><rect x="11" y="12" width="42" height="7" rx="3.5" fill="#d4d4d8"/><g stroke="#bdbdc2" stroke-width="2"><path d="M24 24l1 32M32 24v32M40 24l-1 32"/></g></svg></span><span class="app__label">Trash</span></a>
+  </div>
+  <p class="hint">Click an icon to open it.</p>
 </main>
 
-<footer class="footer">
-  <div class="footer__top">
-    <div class="footer__invite" data-reveal>
-      <p class="footer__line">Got something<br>to build?</p>
-      <a class="button" href="mailto:vali@gevelopers.com?subject=New%20project&amp;body=Hi%20Vali%2C%0A%0AHere%20is%20what%20I%20want%20to%20build%3A%0A">Start a project</a>
+<nav class="dock" aria-label="Dock">
+  <div class="dock__group dock__group--mac">
+    <a class="app" href="#w-terminal" data-open="w-terminal" aria-label="Terminal"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d1d1f"/><rect x="2" y="2" width="60" height="60" rx="12" fill="#2b2b2d"/><path d="M15 22l11 9-11 9" fill="none" stroke="#e6e6e6" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="30" y="38" width="17" height="4.5" rx="2" fill="#e6e6e6"/></svg></span><span class="app__label">Terminal</span></a>
+    <a class="app" href="#w-code" data-open="w-code" aria-label="Code"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f6fc6"/><path d="M24 20 12 32l12 12M40 20l12 12-12 12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 16 29 48" stroke="#9fd0ff" stroke-width="4" stroke-linecap="round"/></svg></span><span class="app__label">Code</span></a>
+    <a class="app" href="#w-error" data-open="w-error" aria-label="Problems"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 61 56H3z" fill="#ffcc00" stroke="#e0a800" stroke-width="2" stroke-linejoin="round"/><rect x="29" y="22" width="6" height="20" rx="3" fill="#1d1d1f"/><circle cx="32" cy="48" r="3.6" fill="#1d1d1f"/></svg></span><span class="app__label">Problems</span></a>
+  </div>
+  <span class="dock__sep dock__sep--mac" aria-hidden="true"></span>
+  <div class="dock__group">
+    <a class="app" href="#w-about" data-open="w-about" aria-label="Notes"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><path d="M0 14A14 14 0 0 1 14 0h36a14 14 0 0 1 14 14v6H0z" fill="#ffd52e"/><g stroke="#d6d6d6" stroke-width="2"><path d="M8 32h48M8 42h48M8 52h48"/></g><g fill="#c9c9c9"><circle cx="20" cy="20" r="0"/></g></svg></span><span class="app__label">Notes</span></a>
+    <a class="app" href="#w-photos" data-open="w-photos" aria-label="Photos"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><g transform="translate(32 32)"><g opacity=".9"><ellipse rx="7" ry="12" cy="-11" fill="#f9b233"/><ellipse rx="7" ry="12" cy="-11" fill="#f39c12" transform="rotate(45)"/><ellipse rx="7" ry="12" cy="-11" fill="#e74c3c" transform="rotate(90)"/><ellipse rx="7" ry="12" cy="-11" fill="#c0398b" transform="rotate(135)"/><ellipse rx="7" ry="12" cy="-11" fill="#8e44ad" transform="rotate(180)"/><ellipse rx="7" ry="12" cy="-11" fill="#3498db" transform="rotate(225)"/><ellipse rx="7" ry="12" cy="-11" fill="#1abc9c" transform="rotate(270)"/><ellipse rx="7" ry="12" cy="-11" fill="#7ac943" transform="rotate(315)"/></g></g></svg></span><span class="app__label">Photos</span></a>
+    <a class="app" href="https://instagram.com/vvalisoy" target="_blank" rel="noopener" aria-label="Instagram"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><radialGradient id="ig" cx="30%" cy="107%" r="150%"><stop offset="0" stop-color="#fdf497"/><stop offset=".05" stop-color="#fdf497"/><stop offset=".45" stop-color="#fd5949"/><stop offset=".6" stop-color="#d6249f"/><stop offset=".9" stop-color="#285AEB"/></radialGradient></defs><rect width="64" height="64" rx="14" fill="url(#ig)"/><rect x="14" y="14" width="36" height="36" rx="11" fill="none" stroke="#fff" stroke-width="4"/><circle cx="32" cy="32" r="8.5" fill="none" stroke="#fff" stroke-width="4"/><circle cx="42.5" cy="21.5" r="2.6" fill="#fff"/></svg></span><span class="app__label">Instagram</span></a>
+    <a class="app" href="#w-mail" data-open="w-mail" aria-label="Mail"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1e88f5"/><rect x="10" y="18" width="44" height="30" rx="4" fill="#fff"/><path d="M11 20l21 15 21-15" fill="none" stroke="#1e88f5" stroke-width="3" stroke-linejoin="round"/></svg></span><span class="app__label">Mail</span></a>
+  </div>
+  <span class="dock__sep dock__sep--mac" aria-hidden="true"></span>
+  <div class="dock__group dock__group--mac">
+    <a class="app" href="https://github.com/vvalisoy" target="_blank" rel="noopener" aria-label="GitHub"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><path transform="translate(12 12) scale(1.667)" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3" fill="#111"/></svg></span><span class="app__label">GitHub</span></a>
+    <a class="app" href="https://t.me/vvalisoy" target="_blank" rel="noopener" aria-label="Telegram"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2aabee"/><path d="M13 31.5 47 18.4c1.6-.6 3 .4 2.5 2.8l-5.8 27.3c-.4 1.9-1.6 2.4-3.2 1.5l-8.8-6.5-4.2 4.1c-.5.5-.9.9-1.8.9l.6-9 16.4-14.8c.7-.6-.2-1-1.1-.4L22 37.1l-8.7-2.7c-1.9-.6-1.9-1.9.4-2.9z" fill="#fff"/></svg></span><span class="app__label">Telegram</span></a>
+    <a class="app" href="#w-trash" data-open="w-trash" aria-label="Trash"><span class="app__img"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 18h36l-3 40a4 4 0 0 1-4 4H21a4 4 0 0 1-4-4z" fill="#e9e9ec" stroke="#bdbdc2" stroke-width="2"/><rect x="11" y="12" width="42" height="7" rx="3.5" fill="#d4d4d8"/><g stroke="#bdbdc2" stroke-width="2"><path d="M24 24l1 32M32 24v32M40 24l-1 32"/></g></svg></span><span class="app__label">Trash</span></a>
+  </div>
+</nav>
+
+<div class="windows">
+
+<section class="win win--info" id="w-tiketvisa" role="dialog" aria-labelledby="w-tiketvisa-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-tiketvisa-t"><span class="win__pre">Information about: </span>TiketVisa</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/tiketvisa-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>TiketVisa</h3><p>Startup · Founder</p></div></div>
+    <div class="info__text"><p>Onward flight reservations and hotel bookings with a real PNR, for travellers who have to show a ticket out at the embassy or the airport.</p><p>I moved the site off WordPress to a static Next.js build in 18 languages, with Cloudflare Workers routing between the new pages and the blog, handling forms and serving images.</p></div>
+    <dl class="info__meta"><div><dt>Role</dt><dd>Founder, product and engineering</dd></div><div><dt>Built with</dt><dd>Next.js, Cloudflare Workers, WordPress</dd></div><div><dt>Languages</dt><dd>18</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/tiketvisa.webp" width="1200" height="750" alt="Homepage of TiketVisa" loading="lazy"></div></details>
+    <a class="mac-button" href="https://tiketvisa.com" target="_blank" rel="noopener">Open tiketvisa.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-unlisim" role="dialog" aria-labelledby="w-unlisim-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-unlisim-t"><span class="win__pre">Information about: </span>UnliSIM</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/unlisim-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>UnliSIM</h3><p>Startup · Founder</p></div></div>
+    <div class="info__text"><p>Travel eSIMs for 200+ destinations. Pick a country and the number of days, pay with Apple Pay, Google Pay or card, and the phone is online in about two minutes. No roaming bill, no SIM swap.</p></div>
+    <dl class="info__meta"><div><dt>Role</dt><dd>Founder and engineering</dd></div><div><dt>Built with</dt><dd>Next.js on Cloudflare (OpenNext)</dd></div><div><dt>Coverage</dt><dd>200+ destinations</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/unlisim.webp" width="1200" height="750" alt="Homepage of UnliSIM" loading="lazy"></div></details>
+    <a class="mac-button" href="https://unlisim.com" target="_blank" rel="noopener">Open unlisim.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-valuto" role="dialog" aria-labelledby="w-valuto-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-valuto-t"><span class="win__pre">Information about: </span>Valuto</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/valuto-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Valuto</h3><p>Startup · Founder</p></div></div>
+    <div class="info__text"><p>A travel wallet that pays merchants abroad by scanning their own local QR codes. One balance in dollars, and the exchange rate is on the screen before you tap.</p><p>A React web app, native iOS and Android apps from one Expo codebase, and a small Hono worker that sends every download link to the right store.</p></div>
+    <dl class="info__meta"><div><dt>Role</dt><dd>Founder, web and mobile</dd></div><div><dt>Built with</dt><dd>React, Expo, Supabase, Solana, Cloudflare</dd></div><div><dt>Platforms</dt><dd>Web, iOS, Android</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/valuto.webp" width="1200" height="750" alt="Homepage of Valuto" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-mainpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-paymentpage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"><img class="shot shot--phone" src="img/p/valuto-app-transferspage.webp" width="540" height="1200" alt="Valuto app screen" loading="lazy"></div></details>
+    <a class="mac-button" href="https://getvaluto.com" target="_blank" rel="noopener">Open getvaluto.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-anonympass" role="dialog" aria-labelledby="w-anonympass-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-anonympass-t"><span class="win__pre">Information about: </span>AnonymPass</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/anonympass-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>AnonymPass</h3><p>Startup · Founder</p></div></div>
+    <div class="info__text"><p>A crypto payment gateway for merchants that card processors turn away. Funds land straight in the merchant&#x27;s wallet on Tron or Solana and settle in under 30 seconds, for a flat 0.25% fee.</p></div>
+    <dl class="info__meta"><div><dt>Role</dt><dd>Founder and engineering</dd></div><div><dt>Chains</dt><dd>Tron, Solana</dd></div><div><dt>Fee</dt><dd>0.25% flat</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/anonympass.webp" width="1200" height="750" alt="Homepage of AnonymPass" loading="lazy"></div></details>
+    <a class="mac-button" href="https://anonympass.com" target="_blank" rel="noopener">Open anonympass.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-digitalrocket" role="dialog" aria-labelledby="w-digitalrocket-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-digitalrocket-t"><span class="win__pre">Information about: </span>Digital Rocket</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/digitalrocket-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Digital Rocket</h3><p>Client · Website</p></div></div>
+    <div class="info__text"><p>Website for an AI-native growth marketing agency in Dubai, blending SEO, AI search and performance media.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>Digital Rocket, Dubai</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/digitalrocket.webp" width="1200" height="750" alt="Homepage of Digital Rocket" loading="lazy"></div></details>
+    <a class="mac-button" href="https://digital-rocket.io" target="_blank" rel="noopener">Open digital-rocket.io ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-undrgoods" role="dialog" aria-labelledby="w-undrgoods-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-undrgoods-t"><span class="win__pre">Information about: </span>Undrgoods</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/undrgoods-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Undrgoods</h3><p>Client · Online store</p></div></div>
+    <div class="info__text"><p>Online store for an underwear and loungewear brand.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>Undrgoods</dd></div><div><dt>Work</dt><dd>E-commerce store</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/undrgoods.webp" width="1200" height="750" alt="Homepage of Undrgoods" loading="lazy"></div></details>
+    <a class="mac-button" href="https://undrgoods.com" target="_blank" rel="noopener">Open undrgoods.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-missingstone" role="dialog" aria-labelledby="w-missingstone-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-missingstone-t"><span class="win__pre">Information about: </span>The Missing Stone</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/missingstone-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>The Missing Stone</h3><p>Client · Online store</p></div></div>
+    <div class="info__text"><p>Online store for a jewellery brand: collections, bangles, bracelets, earrings, necklaces and custom-made pieces.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>The Missing Stone</dd></div><div><dt>Work</dt><dd>E-commerce store</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/missingstone.webp" width="1200" height="750" alt="Homepage of The Missing Stone" loading="lazy"></div></details>
+    <a class="mac-button" href="https://themissingstone.com" target="_blank" rel="noopener">Open themissingstone.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-asiainsight" role="dialog" aria-labelledby="w-asiainsight-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-asiainsight-t"><span class="win__pre">Information about: </span>Asia Insight</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/asiainsight-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Asia Insight</h3><p>Client · Website</p></div></div>
+    <div class="info__text"><p>Website for a destination management company running tours to South-East Asia, in Azerbaijani.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>Asia Insight, Baku</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/asiainsight.webp" width="1200" height="750" alt="Homepage of Asia Insight" loading="lazy"></div></details>
+    <a class="mac-button" href="https://asiainsight.az" target="_blank" rel="noopener">Open asiainsight.az ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-harborfalcon" role="dialog" aria-labelledby="w-harborfalcon-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-harborfalcon-t"><span class="win__pre">Information about: </span>Harbor Falcon</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><img src="img/p/harborfalcon-icon.webp" width="320" height="320" alt="" draggable="false"></span><div><h3>Harbor Falcon</h3><p>Client · Website</p></div></div>
+    <div class="info__text"><p>Website for a US home-buying company: get a competitive cash offer for your house, with no agents and no open houses.</p></div>
+    <dl class="info__meta"><div><dt>Client</dt><dd>Harbor Falcon, United States</dd></div><div><dt>Work</dt><dd>Website design and build</dd></div></dl>
+    <details class="preview" open><summary>Preview:</summary><div class="preview__body"><img class="shot" src="img/p/harborfalcon.webp" width="1200" height="750" alt="Homepage of Harbor Falcon" loading="lazy"></div></details>
+    <a class="mac-button" href="https://harborfalcon.com" target="_blank" rel="noopener">Open harborfalcon.com ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-course" role="dialog" aria-labelledby="w-course-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-course-t"><span class="win__pre">Information about: </span>Elementor course</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#111"/><path d="M14 22 32 13l18 9-18 9z" fill="#fff"/><path d="M21 27v10c0 4 5 7 11 7s11-3 11-7V27l-11 5.5z" fill="#fff" opacity=".75"/><text x="32" y="56" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui">2,600+</text></svg></span><div><h3>Elementor course</h3><p>Teaching · Udemy</p></div></div>
+    <div class="info__text"><p>Elementor A&#x27;dan Z&#x27;ye: a web design course on Udemy, taught in Turkish. More than 2,600 students have taken it, and it is rated 4.5 out of 5.</p></div>
+    <dl class="info__meta"><div><dt>Students</dt><dd>2,600+</dd></div><div><dt>Rating</dt><dd>4.5 / 5</dd></div><div><dt>Language</dt><dd>Turkish</dd></div></dl>
+    
+    <a class="mac-button" href="https://www.udemy.com/course/elementor-a-dan-z-ye-ogren-elementorla-web-sitesi-tasarla/" target="_blank" rel="noopener">Open on Udemy ↗</a>
+  </div>
+</section>
+<section class="win win--info" id="w-gevelopers" role="dialog" aria-labelledby="w-gevelopers-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-gevelopers-t"><span class="win__pre">Information about: </span>Gevelopers LLC</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M4 14a4 4 0 0 1 4-4h16l6 6h26a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#5ac8fa"/><path d="M4 22h56v30a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#7ad7ff"/><text x="32" y="46" text-anchor="middle" font-size="16" font-weight="800" fill="#0a6aa1" font-family="system-ui">G</text></svg></span><div><h3>Gevelopers LLC</h3><p>Company · Since 2022</p></div></div>
+    <div class="info__text"><p>My company. A remote team spread across the globe, building custom web and mobile apps and games for clients: from a startup MVP from scratch to scaling a product that already exists.</p><p>Before Gevelopers I designed and built 200+ WordPress sites at ValisoyMedia, worked on the Kontakt Home WooCommerce store, and started out doing SEO at ELSEO in Baku.</p></div>
+    <dl class="info__meta"><div><dt>Registered</dt><dd>Sheridan, Wyoming</dd></div><div><dt>Team</dt><dd>Remote, worldwide</dd></div><div><dt>Builds</dt><dd>Web, mobile, games</dd></div></dl>
+    
+    <a class="mac-button" href="https://gevelopers.com" target="_blank" rel="noopener">Open gevelopers.com ↗</a>
+  </div>
+</section>
+
+<section class="win win--notes" id="w-about" role="dialog" aria-labelledby="w-about-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-about-t"><span class="win__pre">Information about: </span>Vali Valiyev, vali@gevelopers.com</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body notes">
+    <nav class="notes__side" aria-label="Notes">
+      <a href="#note-about" data-note="note-about" aria-current="true"><span>About me</span><span>11</span></a>
+      <a href="#note-cv" data-note="note-cv"><span>Experience</span><span>4</span></a>
+      <a href="#note-skills" data-note="note-skills"><span>Skills</span><span>12</span></a>
+      <a href="#note-school" data-note="note-school"><span>Education</span><span>2</span></a>
+      <a href="#note-life" data-note="note-life"><span>Interests</span><span>∞</span></a>
+    </nav>
+    <div class="notes__main">
+      <article class="note" id="note-about">
+        <p class="note__date">Baku · Sumgait · wherever the Wi-Fi holds</p>
+        <p>Software engineer, digital nomad and founder of Gevelopers LLC. I trained as a pharmacist in Baku and became a developer instead.</p>
+        <p>That was 2015, doing SEO at ELSEO. Then the Kontakt Home WooCommerce store, then four years and 200+ WordPress sites at ValisoyMedia. Since 2022 I run Gevelopers, a remote team building web and mobile apps, and my own travel products from whichever city I am in that month.</p>
+        <p>I can build…</p>
+        <ul class="checks">
+          <li>Travel products people use at a border</li>
+          <li>Web apps (React, Next.js, Vite)</li>
+          <li>Mobile apps for iOS and Android (Expo)</li>
+          <li>Payments: cards, QR, crypto on Solana and Tron</li>
+          <li>Backends on Cloudflare Workers and Supabase</li>
+          <li>WordPress and WooCommerce, any theme, any builder</li>
+          <li>Online stores (WooCommerce, Shopify, OpenCart)</li>
+          <li>Sites in 18 languages</li>
+          <li>SEO that ranks</li>
+          <li>Automations (n8n)</li>
+          <li>An Elementor course with 2,600+ students</li>
+        </ul>
+      </article>
+      <article class="note" id="note-cv">
+        <p class="note__date">Experience</p>
+        <ul class="rows">
+          <li><span><b>Gevelopers LLC</b> Software developer, founder · Sheridan, WY (remote)</span><span>2022–now</span></li>
+          <li><span><b>ValisoyMedia</b> WordPress developer · Houston, TX (remote). 200+ sites, 100+ themes, custom plugins, Figma and Adobe XD to WordPress, Shopify and OpenCart stores</span><span>2018–22</span></li>
+          <li><span><b>Kontakt Home</b> WordPress developer · Baku. Bug fixes and product sections for kontakt.az, in an 85-person team</span><span>2016–18</span></li>
+          <li><span><b>ELSEO</b> WordPress developer · Baku. On-page and technical SEO</span><span>2015–16</span></li>
+        </ul>
+      </article>
+      <article class="note" id="note-skills">
+        <p class="note__date">Skills</p>
+        <ul class="tags">
+          <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>React Native / Expo</li><li>PHP</li><li>MySQL</li><li>WordPress</li><li>WooCommerce</li><li>Cloudflare Workers</li><li>Supabase</li><li>Solana</li><li>Stripe</li><li>Shopify</li><li>REST APIs</li><li>Git</li><li>SEO</li><li>Elementor</li><li>n8n</li>
+        </ul>
+      </article>
+      <article class="note" id="note-school">
+        <p class="note__date">Education</p>
+        <ul class="rows">
+          <li><span><b>University of Wisconsin–Milwaukee</b> Computer Science, master's</span><span>2021–22</span></li>
+          <li><span><b>Azerbaijan Medical University</b> Bachelor of Pharmacy</span><span>2013–17</span></li>
+        </ul>
+        <p>Languages: Azerbaijani (native), Turkish (C2), English (B2).</p>
+      </article>
+      <article class="note" id="note-life">
+        <p class="note__date">Interests</p>
+        <p>Travel, mostly, and usually with a laptop. The Photos app has some of it; Instagram has the rest.</p>
+        <p>Writing on Substack, teaching web design in Turkish, and building the tools I wished existed at the last border I crossed.</p>
+        <p><a href="https://substack.com/@vvalisoy" target="_blank" rel="noopener">Substack ↗</a> · <a href="https://instagram.com/vvalisoy" target="_blank" rel="noopener">Instagram ↗</a> · <a href="https://www.facebook.com/vvalisoy" target="_blank" rel="noopener">Facebook ↗</a></p>
+      </article>
     </div>
-    <ul class="footer__links" data-reveal>
-      <li><a href="https://github.com/vvalisoy" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://substack.com/@vvalisoy" target="_blank" rel="noopener">Substack</a></li>
-      <li><a href="https://instagram.com/vvalisoy" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.facebook.com/vvalisoy" target="_blank" rel="noopener">Facebook</a></li>
-    </ul>
   </div>
-  <div class="footer__legal">
-    <span>© 2026 Vali Valiyev</span>
-    <span>Product images are screenshots of the live sites. Sumgait photo by Eylin Mehri and Baku video by MB-one, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Sumgait_-_my_home.jpg" target="_blank" rel="noopener">Wikimedia</a> <a href="https://commons.wikimedia.org/wiki/File:View_from_Hilton,_Baku_(VID_20190722_013126).webm" target="_blank" rel="noopener">Commons</a>, shown in greyscale.</span>
+</section>
+
+<section class="win win--photos" id="w-photos" role="dialog" aria-labelledby="w-photos-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-photos-t"><span class="win__pre">Information about: </span>Gallery</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <div class="info__head"><span class="info__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#fff"/><g transform="translate(32 32)"><g opacity=".9"><ellipse rx="7" ry="12" cy="-11" fill="#f9b233"/><ellipse rx="7" ry="12" cy="-11" fill="#f39c12" transform="rotate(45)"/><ellipse rx="7" ry="12" cy="-11" fill="#e74c3c" transform="rotate(90)"/><ellipse rx="7" ry="12" cy="-11" fill="#c0398b" transform="rotate(135)"/><ellipse rx="7" ry="12" cy="-11" fill="#8e44ad" transform="rotate(180)"/><ellipse rx="7" ry="12" cy="-11" fill="#3498db" transform="rotate(225)"/><ellipse rx="7" ry="12" cy="-11" fill="#1abc9c" transform="rotate(270)"/><ellipse rx="7" ry="12" cy="-11" fill="#7ac943" transform="rotate(315)"/></g></g></svg></span><div><h3>Gallery</h3><p>Lately, from @vvalisoy</p></div></div>
+    <div class="gallery"><a class="photo" href="https://www.instagram.com/p/Da-sv5FjU8Q/" data-photo="0" target="_blank" rel="noopener"><img src="img/ig/Da-sv5FjU8Q.webp" width="480" height="640" alt="Vali sitting on the wall of a stone arch railway bridge in the jungle" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/Dao3FkxjIPz/" data-photo="1" target="_blank" rel="noopener"><img src="img/ig/Dao3FkxjIPz.webp" width="480" height="640" alt="Vali sitting on a rock at sunset, a tall flat-topped rock fortress behind him" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/DbBUdZrDRDZ/" data-photo="2" target="_blank" rel="noopener"><img src="img/ig/DbBUdZrDRDZ.webp" width="480" height="640" alt="Vali smiling in an orange T-shirt with elephants grazing behind him" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/DanaccyEt0s/" data-photo="3" target="_blank" rel="noopener"><img src="img/ig/DanaccyEt0s.webp" width="480" height="640" alt="Vali walking in front of a huge white Buddhist stupa under blue sky" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/DaskucZgLbs/" data-photo="4" target="_blank" rel="noopener"><img src="img/ig/DaskucZgLbs.webp" width="480" height="640" alt="Three small fishing boats on green sea, seen from above" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/Da2Lip5AD5I/" data-photo="5" target="_blank" rel="noopener"><img src="img/ig/Da2Lip5AD5I.webp" width="640" height="480" alt="Vali looking out over green hills and valleys" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/DbM28fDMc61/" data-photo="6" target="_blank" rel="noopener"><img src="img/ig/DbM28fDMc61.webp" width="360" height="640" alt="Vali drinking from a fresh coconut" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/DbIlprukiwd/" data-photo="7" target="_blank" rel="noopener"><img src="img/ig/DbIlprukiwd.webp" width="640" height="360" alt="Close-up selfie of Vali on a beach" loading="lazy"></a><a class="photo" href="https://www.instagram.com/p/Dd9kQJaxnXc/" data-photo="8" target="_blank" rel="noopener"><img src="img/ig/Dd9kQJaxnXc.webp" width="360" height="640" alt="A Formula 1 car racing through the streets of Baku, the Flame Towers behind" loading="lazy"></a></div>
+    <div class="viewer" hidden><img alt=""><div class="viewer__bar"><button type="button" data-step="-1" aria-label="Previous photo">‹</button><a target="_blank" rel="noopener">View on Instagram ↗</a><button type="button" data-step="1" aria-label="Next photo">›</button></div></div>
+    <a class="mac-button" href="https://instagram.com/vvalisoy" target="_blank" rel="noopener">More on Instagram ↗</a>
   </div>
-  <p class="footer__name" aria-hidden="true">vvalisoy</p>
-</footer>
+</section>
+
+<section class="win win--terminal" id="w-terminal" role="dialog" aria-labelledby="w-terminal-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-terminal-t">vali — zsh — 80×24</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body term" data-term>
+    <pre class="term__out" aria-live="polite">Last login: <span data-login></span> on ttys001
+Type <b>help</b> to see what this terminal can do.
+</pre>
+    <form class="term__line"><label for="term-in"><span class="term__ps">vali@macbook ~ %</span></label><input id="term-in" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send"></form>
+  </div>
+</section>
+
+<section class="win win--code" id="w-code" role="dialog" aria-labelledby="w-code-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-code-t">vali.ts — vvalisoy</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body code"><pre><code><span class="c">// Hi. This is me, typed.</span>
+<span class="k">export const</span> <span class="v">vali</span> = {
+  name: <span class="s">"Vali Valiyev"</span>,
+  handle: <span class="s">"@vvalisoy"</span>,
+  from: <span class="s">"Sumgait, Azerbaijan"</span>,
+  basedIn: <span class="s">"Baku, mostly"</span>,
+  role: <span class="s">"Software engineer"</span>,
+  company: <span class="s">"Gevelopers LLC"</span>,
+  shipping: [<span class="s">"TiketVisa"</span>, <span class="s">"UnliSIM"</span>, <span class="s">"Valuto"</span>, <span class="s">"AnonymPass"</span>],
+  stack: [<span class="s">"TypeScript"</span>, <span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Expo"</span>,
+          <span class="s">"Cloudflare Workers"</span>, <span class="s">"Supabase"</span>, <span class="s">"PHP"</span>, <span class="s">"WordPress"</span>],
+  wordpressSitesBuilt: <span class="n">200</span>,
+  udemyStudents: <span class="n">2600</span>,
+  speaks: [<span class="s">"az"</span>, <span class="s">"tr"</span>, <span class="s">"en"</span>],
+  availableForWork: <span class="k">true</span>,
+};
+
+<span class="k">export function</span> <span class="f">hire</span>(project: <span class="t">string</span>) {
+  <span class="k">return</span> <span class="f">fetch</span>(<span class="s">"mailto:vali@gevelopers.com"</span>, { body: project });
+}</code></pre></div>
+</section>
+
+<section class="win win--mail" id="w-mail" role="dialog" aria-labelledby="w-mail-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-mail-t">New Message</h2><a class="win__done" href="#">Done</a></header>
+  <form class="win__body mail" data-mail action="mailto:vali@gevelopers.com" method="get" enctype="text/plain">
+    <div class="mail__row"><span>To:</span><span class="mail__to">Vali Valiyev &lt;vali@gevelopers.com&gt;</span></div>
+    <label class="mail__row"><span>Subject:</span><input name="subject" value="Hello Vali" autocomplete="off"></label>
+    <textarea name="body" rows="8" aria-label="Message" placeholder="What are we building?"></textarea>
+    <div class="mail__foot">
+      <span class="mail__alt">Or <a href="https://t.me/vvalisoy" target="_blank" rel="noopener">Telegram @vvalisoy</a></span>
+      <button class="mac-button mac-button--blue" type="submit">Send</button>
+    </div>
+  </form>
+</section>
+
+<section class="win win--trash" id="w-trash" role="dialog" aria-labelledby="w-trash-t">
+  <header class="win__bar"><span class="lights"><a class="light light--close" href="#" aria-label="Close"></a><span class="light light--min"></span><span class="light light--max"></span></span><h2 class="win__title" id="w-trash-t">Trash</h2><a class="win__done" href="#">Done</a></header>
+  <div class="win__body">
+    <table class="finder">
+      <thead><tr><th>Name</th><th>Size</th><th>Date</th></tr></thead>
+      <tbody>
+        <tr><td>wordpress-site-FINAL-final-v7.zip</td><td>212 MB</td><td>2019</td></tr>
+        <tr><td>node_modules</td><td>2.4 GB</td><td>Yesterday</td></tr>
+        <tr><td>jquery-1.4.2.min.js</td><td>71 KB</td><td>2016</td></tr>
+        <tr><td>pharmacology-notes.pdf</td><td>18 MB</td><td>2017</td></tr>
+        <tr><td>startup-idea-#47.txt</td><td>2 KB</td><td>Today</td></tr>
+        <tr><td>roaming-bill-before-unlisim.pdf</td><td>340 KB</td><td>2023</td></tr>
+      </tbody>
+    </table>
+    <p class="finder__foot">6 items. Emptying the trash is turned off on this Mac.</p>
+  </div>
+</section>
+
+<section class="win win--alert" id="w-error" role="alertdialog" aria-labelledby="w-error-t" aria-describedby="w-error-d">
+  <header class="win__bar"><h2 class="win__title" id="w-error-t">Build error</h2></header>
+  <div class="win__body alert">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 61 56H3z" fill="#ffcc00" stroke="#e0a800" stroke-width="2" stroke-linejoin="round"/><rect x="29" y="22" width="6" height="20" rx="3" fill="#1d1d1f"/><circle cx="32" cy="48" r="3.6" fill="#1d1d1f"/></svg>
+    <p id="w-error-d">Vali started another startup before the last one finished deploying. Shame there is no undo for ideas.</p>
+    <a class="mac-button mac-button--blue" href="#">Ship it anyway</a>
+  </div>
+</section>
+</div>
 
 <script src="main.js" defer></script>
 </body>
