@@ -331,6 +331,7 @@ button { cursor: pointer; }
 .note p + p, .note p + ul, .note ul + p { margin-top: 10px; }
 .note__date { text-align: center; font-size: 12px; color: var(--muted); margin: 8px 0 14px; }
 .note a { color: var(--blue); text-decoration: none; }
+.flags { font-size: 22px; line-height: 1.5; letter-spacing: 0.05em; }
 .checks li { position: relative; padding-left: 26px; }
 .checks li + li { margin-top: 4px; }
 .checks li::before {
