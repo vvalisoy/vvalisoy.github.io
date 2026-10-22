@@ -210,7 +210,8 @@
   viewer?.querySelectorAll('[data-step]').forEach((b) => b.addEventListener('click', () => show(current + Number(b.dataset.step))));
   viewer?.querySelector('img').addEventListener('click', () => { viewer.hidden = true; gallery.hidden = false; });
 
-  // ---------- mail: sent through FormSubmit, since GitHub Pages cannot run server code ----------
+  // ---------- mail: Web3Forms first, FormSubmit if that fails, the visitor's mail app last ----------
+  // (GitHub Pages cannot run server code, so the form posts to these services from the browser)
 
   const form = document.querySelector('[data-mail]');
   if (form) {
@@ -220,38 +221,52 @@
     onOpen['w-mail'] = (win) => {
       if (!phone.matches) win.querySelector('input[name="email"]').focus({ preventScroll: true });
     };
+
+    const timeout = (ms) => (AbortSignal.timeout ? AbortSignal.timeout(ms) : undefined);
+    const ok = async (res) => {
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || `HTTP ${res.status}`);
+    };
+    // both take form-encoded bodies, which keeps the requests "simple" (no CORS preflight)
+    const viaWeb3Forms = (m) => fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new URLSearchParams({
+        access_key: form.access_key.value,
+        from_name: `${m.email} via vvalisoy.github.io`,
+        subject: m.subject,
+        email: m.email,
+        replyto: m.email,
+        message: m.message,
+      }),
+      signal: timeout(15000),
+    }).then(ok);
+    const viaFormSubmit = (m) => fetch('https://formsubmit.co/ajax/ebeea50f82724b9a39378fdb2739d93c', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new URLSearchParams({ email: m.email, _replyto: m.email, _subject: m.subject, message: m.message, _template: 'box', _captcha: 'false' }),
+      signal: timeout(15000),
+    }).then(ok);
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
-      if (form._honey.value) return;
-      const data = {
+      if (form.botcheck.checked) return;
+      const m = {
         email: form.email.value.trim(),
-        _replyto: form.email.value.trim(),
-        _subject: `${form._subject.value.trim()} (via vvalisoy.github.io)`,
+        subject: `${form.subject.value.trim()} (via vvalisoy.github.io)`,
         message: form.message.value,
-        _template: 'box',
-        _captcha: 'false',
       };
       sendBtns.forEach((b) => { b.disabled = true; });
       say('Sending…');
       try {
-        // url-encoded form data instead of JSON keeps this a "simple" request, so the browser skips the
-        // extra preflight round trip; give up after 20 s rather than spin forever
-        const body = new URLSearchParams(data);
-        const res = await fetch('https://formsubmit.co/ajax/ebeea50f82724b9a39378fdb2739d93c', {
-          method: 'POST',
-          headers: { Accept: 'application/json' },
-          body,
-          signal: AbortSignal.timeout ? AbortSignal.timeout(20000) : undefined,
-        });
-        const json = await res.json().catch(() => ({}));
-        if (!res.ok || String(json.success) === 'false') throw new Error(json.message || res.statusText);
+        try { await viaWeb3Forms(m); } catch { say('Still sending…'); await viaFormSubmit(m); }
         const win = form.closest('.win');
         win.classList.remove('is-sent'); void win.offsetWidth; win.classList.add('is-sent');
         form.message.value = '';
         say('Sent. Vali will reply to your address, usually within a day.', 'is-ok');
       } catch {
-        const q = `subject=${encodeURIComponent(form._subject.value)}&body=${encodeURIComponent(form.message.value)}`;
+        const q = `subject=${encodeURIComponent(form.subject.value)}&body=${encodeURIComponent(form.message.value)}`;
         say(`The mail service is not answering right now. <a href="mailto:vali@gevelopers.com?${q}">Send it from your mail app</a> instead, or try again in a minute.`, 'is-err');
       } finally {
         sendBtns.forEach((b) => { b.disabled = false; });
