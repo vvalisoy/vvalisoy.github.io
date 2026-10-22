@@ -28,6 +28,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   overflow: hidden;
@@ -526,6 +527,9 @@ button { cursor: pointer; }
   .notes__side a { flex: none; gap: 8px; }
   .notes__main { margin: 0; }
   .term { min-height: 0; font-size: 10.5px; padding-inline: 12px; }
+  /* iOS Safari zooms into any field set below 16px, so every field is 16px on phones */
+  .mail__row input, .mail textarea, .term__line input { font-size: 16px; }
+  .term__line { align-items: center; }
 
   /* iOS Mail: Cancel on the left, title in the middle, a blue send arrow on the right */
   .win--mail .win__bar { gap: 10px; }
